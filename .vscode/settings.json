@@ -1,0 +1,21 @@
+{
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "files.autoSaveDelay": 5000,
+    "cSpell.enableFiletypes": [
+        "ink"
+    ],
+    "cSpell.language": "en-GB",
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:InkScript}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
+}

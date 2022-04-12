@@ -16,32 +16,29 @@ All of this is written in [InkScript](https://inklestudios.com/ink). You can fin
 
 ### Getting set up
 
-In order to write InkScript, and also test it, you need a few things.
+In order to write InkScript, you need to install VS Code:
 
 * Microsoft Visual Studio Code (latest, [download](https://code.visualstudio.com))
-* Inky (latest, [download](https://github.com/inkle/inky/releases/latest))
 
 All editing of InkScript is done inside VS Code. This is because it has a few plugins and markup extensions that are needed to write successfully. It is important: spelling and punctuation is as critical as anything as what appears in InkScript is presented to the player.
 
 To open in VS Code:
 
 1. Start VS Code and choose `File->Open Folder`.
-2. Choose the `InkScript` folder inside where `ChangeableWorlds-Assets` is checked out on your computer.
+2. Choose the `InkScript` folder inside where `ChangeableWorlds-InkScript` is checked out on your computer (e.g. as a submodule to the main repository).
 3. It will suggest extensions to be installed. Do that.
 4. Er...
 5. That's it.
 
-To test the InkScript:
+To test the InkScript, use the Cake build, such as:
 
-1. Start Inky.
-2. Go to `File->Open` and navigate to the `ChangeableWorlds.ink` file inside the `InkScript` folder.
-3. To jump to a specific part of the story, modify the `ChangeableWorlds.ink` top-level direct to where it should go and set any variables (after the includes).
+```bash
+./build.sh --target RunConsoleGame
+```
 
 ### Committing to GitHub
 
-As everything is in GitHub, you must push your changes to InkScript like anything else. Small quirk is that VS Code does not recognise the `InkScript` folder is child to an actual git repository, so you can't use its built-in Git stuff.
-
-If you do change something, make sure to PR it as appropriate.
+As everything is in GitHub, you must push your changes to InkScript like anything else. If you do change something, make sure to PR it as appropriate.
 
 ## Organisation
 
