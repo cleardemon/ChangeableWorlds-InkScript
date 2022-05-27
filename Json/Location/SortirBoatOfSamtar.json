@@ -1,0 +1,6 @@
+{
+	"id": "BoatOfSamtar",
+	"name": [{"localised": "Samtar's Boat"}],
+	"type": "Building",
+	"parent": "Sortir"
+}

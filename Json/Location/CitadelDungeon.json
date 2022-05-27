@@ -1,0 +1,6 @@
+{
+	"id": "CitadelDungeon",
+	"name": [{"localised": "Holding Cells"}],
+	"type": "Room",
+	"parent": "EstirCitadel"
+}

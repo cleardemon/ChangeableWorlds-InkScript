@@ -1,0 +1,7 @@
+{
+	"id": "TerritorySortir",
+	"name": [{"localised": "Territory for Sortir"}],
+	"type": "Territory",
+	"biome": "Temperate",
+	"parent": "Dalxor"
+}

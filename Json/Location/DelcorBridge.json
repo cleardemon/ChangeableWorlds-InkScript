@@ -1,0 +1,6 @@
+{
+	"id": "DelcorBridge",
+	"name": [{"localised": "Bridge into Delcor"}],
+	"type": "Building",
+	"parent": "Delcor"
+}

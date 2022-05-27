@@ -1,0 +1,6 @@
+{
+	"id": "EstirClassWall",
+	"name": [{"localised": "Lower/Upper Estir wall"}],
+	"type": "Building",
+	"parent": "Estir"
+}

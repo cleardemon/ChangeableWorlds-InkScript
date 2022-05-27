@@ -1,0 +1,6 @@
+{
+	"id": "MorlorZansarInstitute",
+	"name": [{"localised": "Zansar Institute"}],
+	"type": "Building",
+	"parent": "EstirMorlorAcademy"
+}

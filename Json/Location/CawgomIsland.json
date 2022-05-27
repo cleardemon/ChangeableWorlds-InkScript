@@ -1,0 +1,7 @@
+{
+	"id": "CawgomIsland",
+	"name": [{"localised": "Cawgom Island"}],
+	"type": "Continent",
+	"biome": "Temperate",
+	"parent": "Pri"
+}

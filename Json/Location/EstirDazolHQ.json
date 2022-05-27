@@ -1,0 +1,6 @@
+{
+	"id": "EstirDazolHQ",
+	"name": [{"localised": "Dazol Station"}],
+	"type": "Building",
+	"parent": "Estir"
+}

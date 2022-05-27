@@ -1,0 +1,7 @@
+{
+	"id": "Dalxor",
+	"name": [{"localised": "Dalxor"}],
+	"type": "Continent",
+	"biome": "Tropical",
+	"parent": "Pri"
+}

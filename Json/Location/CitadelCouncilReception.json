@@ -1,0 +1,6 @@
+{
+	"id": "CitadelCouncilReception",
+	"name": [{"localised": "Council of Five Reception"}],
+	"type": "Room",
+	"parent": "EstirCitadel"
+}
