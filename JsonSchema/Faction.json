@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/faction.json",
+  "title": "Faction",
+  "description": "A group of characters and entities",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "array",
+      "description": "Display name for faction. If not specified, it is not displayed to the player.",
+      "items": {
+        "type": "object",
+        "$ref": "./Util/LocalisedName.json"
+      }
+    },
+    "startingScore": {
+      "type": "integer",
+      "minimum": -100,
+      "maximum": 100
+    }
+  },
+  "required": ["id"]
+}

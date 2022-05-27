@@ -1,0 +1,20 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/localised-name.json",
+  "title": "Localised Name",
+  "description": "Single string that can be localised, with multiple languages",
+  "type": "object",
+  "properties": {
+    "localised": {
+      "type": "string",
+      "description": "The string in its localised form."
+    },
+    "language": {
+      "type": "string",
+      "description": "Language code, e.g. en-US or DE-de. If omitted, defaults to en-GB.",
+      "minLength": 5,
+      "maxLength": 5
+    }
+  },
+  "required": ["localised"]
+}

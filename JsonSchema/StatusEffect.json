@@ -1,0 +1,59 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/status-effect.json",
+  "title": "Status Effect",
+  "description": "A status effect that is applied to a character or an equipment item",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["temporary", "equipped"]
+    },
+    "equipmentId": {
+      "type": "string"
+    },
+    "persist": {
+      "type": "boolean"
+    },
+    "effects": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": ["OnActivate", "OnRemoval"]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["stat", "potency", "flag"]
+          },
+          "amount": {
+            "type": "integer",
+            "minimum": -20,
+            "maximum": 20
+          },
+          "statType": {
+            "type": "string",
+            "enum": ["health", "fortitude", "strength", "avoidance", "charm"]
+          },
+          "turnCount": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 20
+          }
+        },
+        "required": ["mode", "type"]
+      }
+    }
+  },
+  "required": ["id", "name", "type"]
+}

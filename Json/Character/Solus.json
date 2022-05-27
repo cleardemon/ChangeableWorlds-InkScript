@@ -1,0 +1,19 @@
+﻿{
+  "id": "CharacterSolus",
+  "name": "Solus",
+  "race": "Shaler",
+  "baseHealth": 10,
+  "baseFortitude": 10,
+  "baseStrength": 5,
+  "baseAvoidance": 3,
+  "baseCharm": 10,
+  "abilities": [
+
+  ],
+  "items": [
+
+  ],
+  "factions": [
+
+  ]
+}

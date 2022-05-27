@@ -1,0 +1,59 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/character.json",
+  "title": "Character",
+  "description": "A character that is present in the game",
+  "type": "object",
+  "required": ["id", "name", "race", "baseFortitude", "baseHealth", "baseAvoidance", "baseCharm", "baseStrength"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "race": {
+      "type": "string",
+      "enum": ["Yolen", "Shaler", "Kaidis", "Janzat", "Jan", "Motah"]
+    },
+    "baseHealth": {
+      "type": "integer"
+    },
+    "baseFortitude": {
+      "type": "integer"
+    },
+    "baseStrength": {
+      "type": "integer"
+    },
+    "baseAvoidance": {
+      "type": "integer"
+    },
+    "baseCharm": {
+      "type": "integer"
+    },
+    "abilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "CombatAbility.json"
+      }
+    },
+    "items": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "EquipmentItem.json"
+      }
+    },
+    "factions": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "Faction.json"
+      }
+    }
+  }
+}

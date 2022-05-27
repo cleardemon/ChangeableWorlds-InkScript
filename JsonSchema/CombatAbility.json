@@ -1,0 +1,76 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/combat-ability.json",
+  "title": "Combat Ability",
+  "description": "An action that causes something to happen during a combat scenario",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "targetSelf": {
+      "type": "boolean"
+    },
+    "targetDistance": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20
+    },
+    "requiresLineOfSight": {
+      "type": "boolean"
+    },
+    "combatTurnLimit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 20
+    },
+    "characterTurnLimit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 50
+    },
+    "requiredCriteria": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "statType": {
+            "type": "string",
+            "enum": [
+              "health",
+              "fortitude",
+              "strength",
+              "avoidance",
+              "charm"
+            ]
+          },
+          "minimumValue": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "maximumValue": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "isTargetSelf": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "statType"
+        ]
+      }
+    },
+    "statusEffects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "StatusEffect.json"
+      }
+    }
+  }
+}

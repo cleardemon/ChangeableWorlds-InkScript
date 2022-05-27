@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://changeableworlds.com/json/equipment-item.json",
+  "title": "Equipment Item",
+  "description": "An object that can be equipped by a character",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "itemSlot": {
+      "type": "string",
+      "enum": ["hand", "belt", "clothing", "neck"]
+    },
+    "enabledAbilities": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "CombatAbility.json"
+      }
+    },
+    "enabledStatusEffects": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "$ref": "StatusEffect.json"
+      }
+    }
+  },
+  "required": ["id", "itemSlot"]
+}
