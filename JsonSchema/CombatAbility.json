@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://changeableworlds.com/json/combat-ability.json",
   "title": "Combat Ability",
   "description": "An action that causes something to happen during a combat scenario",

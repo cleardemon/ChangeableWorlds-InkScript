@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://changeableworlds.com/json/faction.json",
   "title": "Faction",
   "description": "A group of characters and entities",

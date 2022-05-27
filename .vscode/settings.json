@@ -7,15 +7,54 @@
     "editor.insertSpaces": false,
     "files.autoSaveDelay": 5000,
     "cSpell.enableFiletypes": [
-        "ink"
+        "ink",
+        "json"
     ],
     "cSpell.language": "en-GB",
     "cSpell.customDictionaries": {
         "custom-dictionary-workspace": {
             "name": "custom-dictionary-workspace",
-            "path": "${workspaceFolder:InkScript}/.cspell/custom-dictionary-workspace.txt",
+            "path": "${workspaceFolder}/.cspell/custom-dictionary-workspace.txt",
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/Json/Character/*.json"
+            ],
+            "url": "/JsonSchema/Character.json"
+        },
+        {
+            "fileMatch": [
+                "/Json/CombatAbility/*.json"
+            ],
+            "url": "/JsonSchema/CombatAbility.json"
+        },
+        {
+            "fileMatch": [
+                "/Json/EquipmentItem/*.json"
+            ],
+            "url": "/JsonSchema/EquipmentItem.json"
+        },
+        {
+            "fileMatch": [
+                "/Json/Faction/*.json"
+            ],
+            "url": "/JsonSchema/Faction.json"
+        },
+        {
+            "fileMatch": [
+                "/Json/Location/*.json"
+            ],
+            "url": "/JsonSchema/Location.json"
+        },
+        {
+            "fileMatch": [
+                "/Json/StatusEffect/*.json"
+            ],
+            "url": "/JsonSchema/StatusEffect.json"
+        },
+    ]
 }
