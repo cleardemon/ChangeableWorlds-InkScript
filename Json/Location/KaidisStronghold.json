@@ -1,0 +1,6 @@
+{
+	"id": "KaidisStronghold",
+	"name": [{"localised": "Kaidis Stronghold"}],
+	"type": "Town",
+	"parent": "SulphurDeserts"
+}

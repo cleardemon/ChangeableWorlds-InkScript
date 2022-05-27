@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonEmperorHouse",
+	"name": [{"localised": "Emperor's Residence"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

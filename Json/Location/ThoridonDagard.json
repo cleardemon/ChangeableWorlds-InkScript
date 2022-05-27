@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonDagard",
+	"name": [{"localised": "Dagard District"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

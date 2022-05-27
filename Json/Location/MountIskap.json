@@ -1,0 +1,6 @@
+{
+	"id": "MountIskap",
+	"name": [{"localised": "Mount Iskap"}],
+	"type": "Town",
+	"parent": "Is"
+}

@@ -1,0 +1,6 @@
+{
+	"id": "SenateHouseBalcony",
+	"name": [{"localised": "Balcony of the Senate"}],
+	"type": "Room",
+	"parent": "ThoridonSenateHouse"
+}

@@ -1,0 +1,6 @@
+{
+	"id": "TerritoryXankap",
+	"name": [{"localised": "Territory for Xankap"}],
+	"type": "Territory",
+	"parent": "Dalxor"
+}

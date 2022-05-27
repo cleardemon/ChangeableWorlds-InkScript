@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonSenateHouse",
+	"name": [{"localised": "Senate House"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

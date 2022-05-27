@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsMountainPass",
+	"name": [{"localised": "Mountain Pass"}],
+	"type": "Building",
+	"parent": "Wastelands"
+}

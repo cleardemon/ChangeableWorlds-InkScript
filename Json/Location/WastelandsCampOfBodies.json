@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsCampOfBodies",
+	"name": [{"localised": "Camp of Bodies"}],
+	"type": "Building",
+	"parent": "Wastelands"
+}

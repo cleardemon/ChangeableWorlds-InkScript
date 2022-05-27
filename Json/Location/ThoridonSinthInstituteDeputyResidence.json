@@ -1,0 +1,6 @@
+{
+	"id": "SinthInstituteDeputyResidence",
+	"name": [{"localised": "Deputy Master residence"}],
+	"type": "Room",
+	"parent": "ThoridonSinthInstitute"
+}

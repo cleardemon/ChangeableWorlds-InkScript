@@ -1,0 +1,6 @@
+{
+	"id": "HallOfLegendsVault",
+	"name": [{"localised": "Synth Institute Vaults"}],
+	"type": "Room",
+	"parent": "ThoridonHallOfLegends"
+}

@@ -1,0 +1,7 @@
+{
+	"id": "Shaler",
+	"name": [{"localised": "Shaler"}],
+	"type": "Continent",
+	"biome": "Temperate",
+	"parent": "Pri"
+}

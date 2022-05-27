@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonHallOfLegends",
+	"name": [{"localised": "Hall of Legends"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

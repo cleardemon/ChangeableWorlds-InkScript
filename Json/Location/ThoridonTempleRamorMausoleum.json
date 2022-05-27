@@ -1,0 +1,6 @@
+{
+	"id": "TempleRamorMausoleum",
+	"name": [{"localised": "Emperor's Mausoleum"}],
+	"type": "Room",
+	"parent": "ThoridonTempleOfRamor"
+}

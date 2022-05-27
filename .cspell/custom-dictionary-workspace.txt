@@ -6,6 +6,7 @@ Dalxor
 Dazol
 Delcor
 Dialog
+Druka
 Esdor
 Estir
 Ethereum
@@ -14,17 +15,20 @@ Gomard
 Hexard
 Holgar
 Ikis
+Iskap
 Janzat
 Kaidan
 Kaidis
 Kasard
 Lightbearer
+Mistwood
 Morlor
 Nador
 Osshek
 Ramor
 Rosan
 Samtar
+Sinth
 Skikan
 Solus
 Sortir
@@ -33,5 +37,6 @@ Tagom
 Thoridon
 Volar
 Weshek
+Xankap
 Yolen
 Zansar

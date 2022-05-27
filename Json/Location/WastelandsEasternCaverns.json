@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsEasternCaverns",
+	"name": [{"localised": "Eastern Caverns"}],
+	"type": "Building",
+	"parent": "Wastelands"
+}

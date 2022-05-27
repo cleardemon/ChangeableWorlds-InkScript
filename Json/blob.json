@@ -31,126 +31,108 @@
     "id": "Estir",
     "name": [{"localised": "Estir"}],
     "type": "Town",
-    "biome": "",
     "parent": "TerritoryEstir"
   },
   {
     "id": "EstirCitadel",
     "name": [{"localised": "Citadel"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "CitadelCouncilReception",
     "name": [{"localised": "Council of Five Reception"}],
     "type": "Room",
-    "biome": "",
     "parent": "EstirCitadel"
   },
   {
     "id": "CitadelDungeon",
     "name": [{"localised": "Holding Cells"}],
     "type": "Room",
-    "biome": "",
     "parent": "EstirCitadel"
   },
   {
     "id": "CitadelReception",
     "name": [{"localised": "Reception of the Citadel"}],
     "type": "Room",
-    "biome": "",
     "parent": "EstirCitadel"
   },
   {
     "id": "EstirClassWall",
     "name": [{"localised": "Lower/Upper Estir wall"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "EstirDazolHQ",
     "name": [{"localised": "Dazol Station"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "EstirHarbour",
     "name": [{"localised": "Estir Harbour"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "EstirInn",
     "name": [{"localised": "Spark Inn"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "EstirMarketplace",
     "name": [{"localised": "Marketplace"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "EstirMorlorAcademy",
     "name": [{"localised": "Morlor Academy"}],
     "type": "Building",
-    "biome": "",
     "parent": "Estir"
   },
   {
     "id": "MorlorProfessorResidence",
     "name": [{"localised": "Professor's Residence"}],
     "type": "Building",
-    "biome": "",
     "parent": "EstirMorlorAcademy"
   },
   {
     "id": "MorlorZansarInstitute",
     "name": [{"localised": "Zansar Institute"}],
     "type": "Building",
-    "biome": "",
     "parent": "EstirMorlorAcademy"
   },
   {
     "id": "ZansarTestingRoom",
     "name": [{"localised": "Lab inside Zansar Institute"}],
     "type": "Room",
-    "biome": "",
     "parent": "MorlorZansarInstitute"
   },
   {
     "id": "TerritoryDelcor",
     "name": [{"localised": "Territory for Delcor"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Dalxor"
   },
   {
     "id": "Delcor",
     "name": [{"localised": "Town of Delcor"}],
     "type": "Town",
-    "biome": "",
     "parent": "TerritoryDelcor"
   },
   {
     "id": "DelcorBridge",
     "name": [{"localised": "Bridge into Delcor"}],
     "type": "Building",
-    "biome": "",
     "parent": "Delcor"
   },
   {
     "id": "DelcorCliff",
     "name": [{"localised": "Cliff at side of Delcor"}],
     "type": "Building",
-    "biome": "",
     "parent": "Delcor"
   },
   {
@@ -171,133 +153,114 @@
     "id": "Sortir",
     "name": [{"localised": "Sortir"}],
     "type": "Town",
-    "biome": "",
     "parent": "TerritorySortir"
   },
   {
     "id": "BoatOfSamtar",
     "name": [{"localised": "Samtar's Boat"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirGuardhouse",
     "name": [{"localised": "Sortir Guardhouse (TEMP)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirHarbour",
     "name": [{"localised": "Sortir Harbour"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirInn",
     "name": [{"localised": "Sortir Inn (Unnamed)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirMainGate",
     "name": [{"localised": "Gates of Sortir"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirMinersGuild",
     "name": [{"localised": "Sortir Mining Guild (TEMP)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirRefinery",
     "name": [{"localised": "Sortir Refinery (TEMP)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "SortirSmithy",
     "name": [{"localised": "Sortir Smithy (TEMP)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Sortir"
   },
   {
     "id": "Wastelands",
     "name": [{"localised": "Wastelands"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Dalxor"
   },
   {
     "id": "WastelandsCampOfBodies",
     "name": [{"localised": "Camp of Bodies"}],
     "type": "Building",
-    "biome": "",
     "parent": "Wastelands"
   },
   {
     "id": "WastelandsCrashSite",
     "name": [{"localised": "Crashed device"}],
     "type": "Building",
-    "biome": "",
     "parent": "Wastelands"
   },
   {
     "id": "WastelandsEasternCaverns",
     "name": [{"localised": "Eastern Caverns"}],
     "type": "Building",
-    "biome": "",
     "parent": "Wastelands"
   },
   {
     "id": "CavernsBirthplace",
     "name": [{"localised": "Janzat Birthplace"}],
     "type": "Room",
-    "biome": "",
     "parent": "WastelandsEasternCaverns"
   },
   {
     "id": "CavernsTunnel",
     "name": [{"localised": "Tunnel towards Xankap"}],
     "type": "Room",
-    "biome": "",
     "parent": "WastelandsEasternCaverns"
   },
   {
     "id": "WastelandsForestOfDeath",
     "name": [{"localised": "Forest of Death"}],
     "type": "Building",
-    "biome": "",
     "parent": "Wastelands"
   },
   {
     "id": "WastelandsMountainPass",
     "name": [{"localised": "Mountain Pass"}],
     "type": "Building",
-    "biome": "",
     "parent": "Wastelands"
   },
   {
     "id": "TerritoryXankap",
     "name": [{"localised": "Territory for Xankap"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Dalxor"
   },
   {
     "id": "Xankap",
     "name": [{"localised": "Xankap"}],
     "type": "Town",
-    "biome": "",
     "parent": "TerritoryXankap"
   },
   {
@@ -311,294 +274,252 @@
     "id": "Crossroads",
     "name": [{"localised": "Crossroads"}],
     "type": "Building",
-    "biome": "",
     "parent": "Shaler"
   },
   {
     "id": "Flatlands",
     "name": [{"localised": "Flatlands"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Shaler"
   },
   {
     "id": "Thoridon",
     "name": [{"localised": "Thoridon"}],
     "type": "Town",
-    "biome": "",
     "parent": "Flatlands"
   },
   {
     "id": "ThoridonEmperorHouse",
     "name": [{"localised": "Emperor's Residence"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "EmperorDukeQuarters",
     "name": [{"localised": "Grand Duke's Quarters"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonEmperorHouse"
   },
   {
     "id": "EmperorReception",
     "name": [{"localised": "Emperor's Reception"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonEmperorHouse"
   },
   {
     "id": "ThoridonGatesEast",
     "name": [{"localised": "Osshek Gatehouse"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonGatesSouth",
     "name": [{"localised": "Surhek Gatehouse"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonGatesWest",
     "name": [{"localised": "Weshek Gatehouse"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonPeoplesUnionHQ",
     "name": [{"localised": "People's Union HQ"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "PeoplesUnionBoard",
     "name": [{"localised": "Boardroom for People's Union"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonPeoplesUnionHQ"
   },
   {
     "id": "PeoplesUnionCourtyard",
     "name": [{"localised": "Courtyard in rear of Union HQ"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonPeoplesUnionHQ"
   },
   {
     "id": "ThoridonIkisHome",
     "name": [{"localised": "Home of Kaidan"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "PresidentBedroomKaidan",
     "name": [{"localised": "Bedroom of Kaidan"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonIkisHome"
   },
   {
     "id": "ThoridonQuadrangle",
     "name": [{"localised": "Quadrangle"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonSenateHouse",
     "name": [{"localised": "Senate House"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "SenateFloor",
     "name": [{"localised": "Floor of the Senate"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSenateHouse"
   },
   {
     "id": "SenateHouseBalcony",
     "name": [{"localised": "Balcony of the Senate"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSenateHouse"
   },
   {
     "id": "ThoridonSynthInstitute",
     "name": [{"localised": "Synth Institute"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "SynthInstituteDeputyResidence",
     "name": [{"localised": "Deputy Master residence"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSynthInstitute"
   },
   {
     "id": "SynthInstituteGreens",
     "name": [{"localised": "Institute Greens"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSynthInstitute"
   },
   {
     "id": "SynthInstituteMasterOffice",
     "name": [{"localised": "Office of the Master Conjurer"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSynthInstitute"
   },
   {
     "id": "SynthInstituteReception",
     "name": [{"localised": "Reception of the Institute"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSynthInstitute"
   },
   {
     "id": "SynthInstituteTheatre",
     "name": [{"localised": "Lecture Theatre"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonSynthInstitute"
   },
   {
     "id": "ThoridonTempleOfRamor",
     "name": [{"localised": "Temple of Ramor"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "TempleRamorArchives",
     "name": [{"localised": "Temple Archives"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonTempleOfRamor"
   },
   {
     "id": "TempleRamorMausoleum",
     "name": [{"localised": "Emperor's Mausoleum"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonTempleOfRamor"
   },
   {
     "id": "TempleRamorNave",
     "name": [{"localised": "The Nave"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonTempleOfRamor"
   },
   {
     "id": "ThoridonMarketplaceOld",
     "name": [{"localised": "People's Union Old Marketplace"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonAbandonedWarehouse",
     "name": [{"localised": "Abandoned Warehouse"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonMarketplaceOld"
   },
   {
     "id": "ThoridonMarketplace",
     "name": [{"localised": "People's Union Marketplace"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonOldGatehouseInn",
     "name": [{"localised": "Old Gatehouse Inn"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonBlueCask",
     "name": [{"localised": "The Blue Cask"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonHexard",
     "name": [{"localised": "Hexard District"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonDagard",
     "name": [{"localised": "Dagard District"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonNador",
     "name": [{"localised": "Nador district"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonKasard",
     "name": [{"localised": "Kasard district"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonGomard",
     "name": [{"localised": "Gomard district"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonEsdor",
     "name": [{"localised": "Esdor district"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonGuardhouse",
     "name": [{"localised": "Guardhouse"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "ThoridonHallOfLegends",
     "name": [{"localised": "Hall of Legends"}],
     "type": "Building",
-    "biome": "",
     "parent": "Thoridon"
   },
   {
     "id": "HallOfLegendsVault",
     "name": [{"localised": "Synth Institute Vaults"}],
     "type": "Room",
-    "biome": "",
     "parent": "ThoridonHallOfLegends"
   },
   {
@@ -612,21 +533,18 @@
     "id": "MountIskap",
     "name": [{"localised": "Mount Iskap"}],
     "type": "Town",
-    "biome": "",
     "parent": "Is"
   },
   {
     "id": "Mistwood",
     "name": [{"localised": "Mistwood"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Shaler"
   },
   {
     "id": "DrukaTown",
     "name": [{"localised": "Druka Town (PH)"}],
     "type": "Town",
-    "biome": "",
     "parent": "Mistwood"
   },
   {
@@ -640,119 +558,102 @@
     "id": "KaidisStronghold",
     "name": [{"localised": "Kaidis Stronghold"}],
     "type": "Town",
-    "biome": "",
     "parent": "SulphurDeserts"
   },
   {
     "id": "StrongholdCaverns",
     "name": [{"localised": "Stronghold Caverns"}],
     "type": "Building",
-    "biome": "",
     "parent": "KaidisStronghold"
   },
   {
     "id": "StrongholdCourtyard",
     "name": [{"localised": "Stronghold Courtyard"}],
     "type": "Building",
-    "biome": "",
     "parent": "KaidisStronghold"
   },
   {
     "id": "StrongholdDoctorsDivision",
     "name": [{"localised": "Doctor's Division HQ"}],
     "type": "Building",
-    "biome": "",
     "parent": "KaidisStronghold"
   },
   {
     "id": "DoctorsDivisionLab",
     "name": [{"localised": "Doctor's Laboratory"}],
     "type": "Room",
-    "biome": "",
     "parent": "StrongholdDoctorsDivision"
   },
   {
     "id": "StrongholdProductionDivision",
     "name": [{"localised": "Production Division"}],
     "type": "Building",
-    "biome": "",
     "parent": "KaidisStronghold"
   },
   {
     "id": "StrongholdRoyalSeat",
     "name": [{"localised": "Royal Seat"}],
     "type": "Building",
-    "biome": "",
     "parent": "KaidisStronghold"
   },
   {
     "id": "OutpostOra",
     "name": [{"localised": "Outpost Ora"}],
     "type": "Town",
-    "biome": "",
     "parent": "SulphurDeserts"
   },
   {
     "id": "OraIrakasCrop",
     "name": [{"localised": "Crop of Irakas"}],
     "type": "Room",
-    "biome": "",
     "parent": "OutpostOra"
   },
   {
     "id": "WodarDrop",
     "name": [{"localised": "Wodar Drop"}],
     "type": "Town",
-    "biome": "",
     "parent": "SulphurDeserts"
   },
   {
     "id": "StonyPlains",
     "name": [{"localised": "Stony Plains"}],
     "type": "Territory",
-    "biome": "",
     "parent": "Shaler"
   },
   {
     "id": "Skikan",
     "name": [{"localised": "Skikan"}],
     "type": "Town",
-    "biome": "",
     "parent": "StonyPlains"
   },
   {
     "id": "SkikanHarbour",
     "name": [{"localised": "Skikan Harbour"}],
     "type": "Building",
-    "biome": "",
     "parent": "Skikan"
   },
   {
     "id": "SkikanInn",
     "name": [{"localised": "Skikan Inn (Unnamed)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Skikan"
   },
   {
     "id": "SkikanQuarry",
     "name": [{"localised": "Quarry (Unnamed)"}],
     "type": "Building",
-    "biome": "",
     "parent": "Skikan"
   },
   {
     "id": "SyntheticDomain",
     "name": [{"localised": "Synthetic Domain"}],
     "type": "Continent",
-    "biome": "",
     "parent": "Ethereum"
   },
   {
     "id": "SyntheticVoid",
     "name": [{"localised": "Void"}],
     "type": "Town",
-    "biome": "",
     "parent": "SyntheticDomain"
   },
   {

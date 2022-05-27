@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsForestOfDeath",
+	"name": [{"localised": "Forest of Death"}],
+	"type": "Building",
+	"parent": "Wastelands"
+}

@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsCrashSite",
+	"name": [{"localised": "Crashed device"}],
+	"type": "Building",
+	"parent": "Wastelands"
+}
