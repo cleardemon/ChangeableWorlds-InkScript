@@ -1,0 +1,6 @@
+{
+	"id": "Delcor",
+	"name": [{"localised": "Town of Delcor"}],
+	"type": "Town",
+	"parent": "TerritoryDelcor"
+}

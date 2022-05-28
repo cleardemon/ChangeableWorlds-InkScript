@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsCavernsBirthplace",
+	"name": [{"localised": "Janzat Birthplace"}],
+	"type": "Room",
+	"parent": "WastelandsEasternCaverns"
+}

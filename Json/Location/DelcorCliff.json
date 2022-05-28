@@ -1,0 +1,6 @@
+{
+	"id": "DelcorCliff",
+	"name": [{"localised": "Cliff at side of Delcor"}],
+	"type": "Building",
+	"parent": "Delcor"
+}

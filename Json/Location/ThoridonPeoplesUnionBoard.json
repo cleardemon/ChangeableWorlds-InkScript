@@ -1,0 +1,6 @@
+{
+	"id": "PeoplesUnionBoard",
+	"name": [{"localised": "Boardroom for People's Union"}],
+	"type": "Room",
+	"parent": "ThoridonPeoplesUnionHQ"
+}

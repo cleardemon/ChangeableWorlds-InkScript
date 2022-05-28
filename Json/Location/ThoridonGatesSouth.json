@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonGatesSouth",
+	"name": [{"localised": "Surhek Gatehouse"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

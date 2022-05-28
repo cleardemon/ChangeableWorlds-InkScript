@@ -1,0 +1,6 @@
+{
+	"id": "SinthInstituteTheatre",
+	"name": [{"localised": "Lecture Theatre"}],
+	"type": "Room",
+	"parent": "ThoridonSinthInstitute"
+}

@@ -1,0 +1,6 @@
+{
+	"id": "PresidentBedroomKaidan",
+	"name": [{"localised": "Bedroom of Kaidan"}],
+	"type": "Room",
+	"parent": "ThoridonIkisHome"
+}

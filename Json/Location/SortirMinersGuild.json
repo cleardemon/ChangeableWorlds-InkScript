@@ -1,0 +1,6 @@
+{
+	"id": "SortirMinersGuild",
+	"name": [{"localised": "Sortir Mining Guild (TEMP)"}],
+	"type": "Building",
+	"parent": "Sortir"
+}

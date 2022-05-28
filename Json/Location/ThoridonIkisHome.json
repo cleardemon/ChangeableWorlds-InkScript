@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonIkisHome",
+	"name": [{"localised": "Home of Kaidan"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

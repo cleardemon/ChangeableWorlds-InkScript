@@ -1,0 +1,6 @@
+{
+	"id": "SyntheticDomain",
+	"name": [{"localised": "Synthetic Domain"}],
+	"type": "Continent",
+	"parent": "Ethereum"
+}

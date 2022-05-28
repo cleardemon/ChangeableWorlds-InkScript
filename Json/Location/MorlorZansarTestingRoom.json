@@ -1,0 +1,6 @@
+{
+	"id": "ZansarTestingRoom",
+	"name": [{"localised": "Lab inside Zansar Institute"}],
+	"type": "Room",
+	"parent": "MorlorZansarInstitute"
+}

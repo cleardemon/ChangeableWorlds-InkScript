@@ -1,0 +1,6 @@
+{
+	"id": "EstirMorlorAcademy",
+	"name": [{ "localised": "Morlor Academy" }],
+	"type": "Building",
+	"parent": "Estir"
+}

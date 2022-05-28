@@ -1,0 +1,6 @@
+{
+	"id": "DrukaTown",
+	"name": [{"localised": "Druka Town (PH)"}],
+	"type": "Town",
+	"parent": "Mistwood"
+}

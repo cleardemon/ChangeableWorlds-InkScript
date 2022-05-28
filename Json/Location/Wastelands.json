@@ -1,0 +1,6 @@
+{
+	"id": "Wastelands",
+	"name": [{"localised": "Wastelands"}],
+	"type": "Territory",
+	"parent": "Dalxor"
+}

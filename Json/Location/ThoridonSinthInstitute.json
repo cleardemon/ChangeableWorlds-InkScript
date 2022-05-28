@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonSinthInstitute",
+	"name": [{"localised": "Sinth Institute"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

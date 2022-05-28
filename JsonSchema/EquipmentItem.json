@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://changeableworlds.com/json/equipment-item.json",
   "title": "Equipment Item",
   "description": "An object that can be equipped by a character",

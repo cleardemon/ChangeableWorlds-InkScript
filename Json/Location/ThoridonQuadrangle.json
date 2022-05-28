@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonQuadrangle",
+	"name": [{"localised": "Quadrangle"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

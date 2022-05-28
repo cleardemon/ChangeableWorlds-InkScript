@@ -1,0 +1,6 @@
+{
+	"id": "PeoplesUnionCourtyard",
+	"name": [{"localised": "Courtyard in rear of Union HQ"}],
+	"type": "Room",
+	"parent": "ThoridonPeoplesUnionHQ"
+}

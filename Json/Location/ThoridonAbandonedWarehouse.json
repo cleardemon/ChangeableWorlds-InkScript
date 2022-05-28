@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonAbandonedWarehouse",
+	"name": [{"localised": "Abandoned Warehouse"}],
+	"type": "Room",
+	"parent": "ThoridonMarketplaceOld"
+}

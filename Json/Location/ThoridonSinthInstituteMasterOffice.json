@@ -1,0 +1,6 @@
+{
+	"id": "SinthInstituteMasterOffice",
+	"name": [{"localised": "Office of the Master Conjurer"}],
+	"type": "Room",
+	"parent": "ThoridonSinthInstitute"
+}

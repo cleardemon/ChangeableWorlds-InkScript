@@ -1,0 +1,6 @@
+{
+	"id": "StonyPlains",
+	"name": [{"localised": "Stony Plains"}],
+	"type": "Territory",
+	"parent": "Shaler"
+}

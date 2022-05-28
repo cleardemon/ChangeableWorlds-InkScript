@@ -1,0 +1,6 @@
+{
+	"id": "SyntheticVoid",
+	"name": [{"localised": "Void"}],
+	"type": "Town",
+	"parent": "SyntheticDomain"
+}

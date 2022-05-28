@@ -1,0 +1,7 @@
+{
+	"id": "SulphurDeserts",
+	"name": [{"localised": "Sulphur Deserts"}],
+	"type": "Territory",
+	"biome": "Desert",
+	"parent": "Shaler"
+}

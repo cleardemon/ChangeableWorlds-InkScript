@@ -1,0 +1,6 @@
+{
+	"id": "EstirMarketplace",
+	"name": [{"localised": "Marketplace"}],
+	"type": "Building",
+	"parent": "Estir"
+}

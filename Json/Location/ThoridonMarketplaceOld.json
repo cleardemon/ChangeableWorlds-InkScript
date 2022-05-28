@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonMarketplaceOld",
+	"name": [{"localised": "People's Union Old Marketplace"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

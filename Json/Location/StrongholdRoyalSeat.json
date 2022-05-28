@@ -1,0 +1,6 @@
+{
+	"id": "StrongholdRoyalSeat",
+	"name": [{"localised": "Royal Seat"}],
+	"type": "Building",
+	"parent": "KaidisStronghold"
+}

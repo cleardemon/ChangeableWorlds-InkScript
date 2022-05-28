@@ -1,0 +1,6 @@
+{
+	"id": "WastelandsCavernsTunnel",
+	"name": [{"localised": "Tunnel towards Xankap"}],
+	"type": "Room",
+	"parent": "WastelandsEasternCaverns"
+}

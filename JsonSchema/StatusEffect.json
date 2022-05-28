@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://changeableworlds.com/json/status-effect.json",
   "title": "Status Effect",
   "description": "A status effect that is applied to a character or an equipment item",

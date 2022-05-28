@@ -1,0 +1,6 @@
+{
+	"id": "EmperorDukeQuarters",
+	"name": [{"localised": "Grand Duke's Quarters"}],
+	"type": "Room",
+	"parent": "ThoridonEmperorHouse"
+}

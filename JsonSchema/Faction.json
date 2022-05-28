@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft-07/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://changeableworlds.com/json/faction.json",
   "title": "Faction",
   "description": "A group of characters and entities",
@@ -13,7 +13,7 @@
       "description": "Display name for faction. If not specified, it is not displayed to the player.",
       "items": {
         "type": "object",
-        "$ref": "./Util/LocalisedName.json"
+        "$ref": "UtilLocalisedName.json"
       }
     },
     "startingScore": {

@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonBlueCask",
+	"name": [{"localised": "The Blue Cask"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}

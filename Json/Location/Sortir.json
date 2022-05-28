@@ -1,0 +1,6 @@
+{
+	"id": "Sortir",
+	"name": [{"localised": "Sortir"}],
+	"type": "Town",
+	"parent": "TerritorySortir"
+}

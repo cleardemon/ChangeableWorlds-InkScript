@@ -1,0 +1,6 @@
+{
+	"id": "SortirMainGate",
+	"name": [{"localised": "Gates of Sortir"}],
+	"type": "Building",
+	"parent": "Sortir"
+}

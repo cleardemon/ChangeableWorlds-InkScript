@@ -1,0 +1,6 @@
+{
+	"id": "EstirInn",
+	"name": [{"localised": "Spark Inn"}],
+	"type": "Building",
+	"parent": "Estir"
+}

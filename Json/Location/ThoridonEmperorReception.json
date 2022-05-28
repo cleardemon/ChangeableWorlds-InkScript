@@ -1,0 +1,6 @@
+{
+	"id": "EmperorReception",
+	"name": [{"localised": "Emperor's Reception"}],
+	"type": "Room",
+	"parent": "ThoridonEmperorHouse"
+}

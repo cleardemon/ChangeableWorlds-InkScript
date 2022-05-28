@@ -1,0 +1,6 @@
+{
+	"id": "ThoridonHexard",
+	"name": [{"localised": "Hexard District"}],
+	"type": "Building",
+	"parent": "Thoridon"
+}
