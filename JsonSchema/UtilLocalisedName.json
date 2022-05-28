@@ -1,9 +1,10 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft-07/schema",
-  "$id": "https://changeableworlds.com/json/localised-name.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://changeableworlds.com/json/utillocalisedname.json",
   "title": "Localised Name",
   "description": "Single string that can be localised, with multiple languages",
   "type": "object",
+  "required": ["localised"],
   "properties": {
     "localised": {
       "type": "string",
@@ -15,6 +16,5 @@
       "minLength": 5,
       "maxLength": 5
     }
-  },
-  "required": ["localised"]
+  }
 }
