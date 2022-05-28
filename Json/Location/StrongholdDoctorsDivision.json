@@ -1,0 +1,6 @@
+{
+	"id": "StrongholdDoctorsDivision",
+	"name": [{"localised": "Doctor's Division HQ"}],
+	"type": "Building",
+	"parent": "KaidisStronghold"
+}

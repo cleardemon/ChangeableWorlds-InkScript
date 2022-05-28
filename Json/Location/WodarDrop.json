@@ -1,0 +1,6 @@
+{
+	"id": "WodarDrop",
+	"name": [{"localised": "Wodar Drop"}],
+	"type": "Town",
+	"parent": "SulphurDeserts"
+}

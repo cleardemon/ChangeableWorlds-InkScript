@@ -1,0 +1,6 @@
+{
+	"id": "StrongholdProductionDivision",
+	"name": [{"localised": "Production Division"}],
+	"type": "Building",
+	"parent": "KaidisStronghold"
+}

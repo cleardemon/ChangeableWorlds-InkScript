@@ -1,0 +1,6 @@
+{
+	"id": "DoctorsDivisionLab",
+	"name": [{"localised": "Doctor's Laboratory"}],
+	"type": "Room",
+	"parent": "StrongholdDoctorsDivision"
+}

@@ -1,0 +1,6 @@
+{
+	"id": "OutpostOra",
+	"name": [{"localised": "Outpost Ora"}],
+	"type": "Town",
+	"parent": "SulphurDeserts"
+}
