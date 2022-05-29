@@ -31,28 +31,25 @@
     "baseCharm": {
       "type": "integer"
     },
-    "abilities": {
+    "abilityIds": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "type": "object",
-        "$ref": "CombatAbility.json"
+        "type": "string"
       }
     },
-    "items": {
+    "equippedIds": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "type": "object",
-        "$ref": "EquipmentItem.json"
+        "type": "string"
       }
     },
-    "factions": {
+    "factionIds": {
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "type": "object",
-        "$ref": "Faction.json"
+        "type": "string"
       }
     }
   }

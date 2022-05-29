@@ -4,9 +4,11 @@
   "title": "Faction",
   "description": "A group of characters and entities",
   "type": "object",
+  "required": ["id"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Required. Unique identifier for the faction."
     },
     "name": {
       "type": "array",
@@ -17,10 +19,9 @@
       }
     },
     "startingScore": {
-      "type": "integer",
-      "minimum": -100,
-      "maximum": 100
+      "type": "string",
+      "enum": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honoured", "Revered"],
+      "description": "Defines the starting score for the character with this faction. Note that internally, the score is numeral, but that number is never tested against or displayed."
     }
-  },
-  "required": ["id"]
+  }
 }

@@ -7,11 +7,12 @@
   "required": ["id", "name", "type"],
   "properties": {
     "id": {
-        "type": "string"
-    },
+        "type": "string",
+        "description": "Required. Unique identifier for the location."
+      },
     "name": {
       "type": "array",
-      "description": "Displayable name.",
+      "description": "Required. Displayable name.",
       "items": {
         "type": "object",
         "$ref": "UtilLocalisedName.json"
@@ -19,7 +20,8 @@
     },
     "type": {
         "type": "string",
-        "enum": ["World", "Continent", "Territory", "Town", "Building", "Room"]
+        "enum": ["World", "Continent", "Territory", "Town", "Building", "Room"],
+        "description": "Required. Defines what type this location is. Important to go from macro to micro scale."
     },
     "biome": {
         "type": "string",
@@ -30,5 +32,5 @@
         "type": "string",
         "description": "If location is inside a different location, the id of that location"
     }
-  }    
+  }
 }

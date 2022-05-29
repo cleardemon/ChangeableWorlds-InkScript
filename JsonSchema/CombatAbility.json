@@ -38,11 +38,11 @@
           "statType": {
             "type": "string",
             "enum": [
-              "health",
-              "fortitude",
-              "strength",
-              "avoidance",
-              "charm"
+              "Health",
+              "Fortitude",
+              "Strength",
+              "Avoidance",
+              "Charm"
             ]
           },
           "minimumValue": {
