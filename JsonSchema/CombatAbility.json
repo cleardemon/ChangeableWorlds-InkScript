@@ -4,39 +4,57 @@
   "title": "Combat Ability",
   "description": "An action that causes something to happen during a combat scenario",
   "type": "object",
+  "required": ["id", "name", "statusEffectIds"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Required. Unique identifier for the ability."
+    },
+    "name": {
+      "type": "array",
+      "description": "Required. Displayable name.",
+      "items": {
+        "type": "object",
+        "$ref": "UtilLocalisedName.json"
+      }
     },
     "targetSelf": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "If true, this ability can only target the same character that is using it. If false, other characters in a combat scenario can be targetted."
     },
     "targetDistance": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 20
+      "maximum": 20,
+      "description": "Defines how many grid squares away from the current character that a target can be, as the crow flies. If targetSelf is true, this value is ignored."
     },
     "requiresLineOfSight": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "If true, this ability requires that the character have clear line of sight to the target. This means that no obstructions and any other character can be between the character and the target."
     },
     "combatTurnLimit": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 20
+      "maximum": 20,
+      "description": "Defines how many combat turns must elapse before this ability can be used again. If zero, the ability can be used on every turn."
     },
     "characterTurnLimit": {
       "type": "integer",
       "minimum": 0,
-      "maximum": 50
+      "maximum": 50,
+      "description": "Defines how many turns overall (including non-combat turns) must elapse before this ability can be used again. If zero, the ability can be used on every turn."
     },
     "requiredCriteria": {
       "type": "array",
       "uniqueItems": true,
+      "description": "Any criteria that must all result in a successful test before the ability can be used (excluding turn limits). If none are defined, the ability can be used regardless.",
       "items": {
         "type": "object",
+        "required": ["statType"],
         "properties": {
           "statType": {
             "type": "string",
+            "description": "What statistic on the character to test against.",
             "enum": [
               "Health",
               "Fortitude",
@@ -48,28 +66,31 @@
           "minimumValue": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "description": "A minimum value that the stat must be to make this test pass."
           },
           "maximumValue": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "default": 100,
+            "description": "A maximum value that the stat must be to make this test pass."
           },
           "isTargetSelf": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "If true, the stat will be tested against the character attempting to use the ability. If false, the stat will be tested against the target character."
           }
-        },
-        "required": [
-          "statType"
-        ]
+        }
       }
     },
-    "statusEffects": {
+    "statusEffectIds": {
       "type": "array",
       "uniqueItems": true,
+      "minItems": 1,
+      "description": "Required. A list of status effect IDs that are applied to the character when this ability is used, and all required criteria pass.",
       "items": {
-        "type": "object",
-        "$ref": "StatusEffect.json"
+        "type": "string",
+        "description": "ID of a status effect to apply to the character."
       }
     }
   }

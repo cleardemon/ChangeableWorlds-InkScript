@@ -23,6 +23,7 @@ Kasard
 Lightbearer
 Mistwood
 Morlor
+Motah
 Nador
 Osshek
 Ramor
