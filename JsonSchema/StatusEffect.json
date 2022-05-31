@@ -4,7 +4,7 @@
   "title": "Status Effect",
   "description": "A status effect that is applied to a character or an equipment item",
   "type": "object",
-  "required": ["id", "effects"],
+  "required": ["id", "actions"],
   "properties": {
     "id": {
       "type": "string",
@@ -22,11 +22,11 @@
       "type": "boolean",
       "description": "If true, this status effect persists when the character is outside of a combat scenario. Defaults to false."
     },
-    "effects": {
+    "actions": {
       "type": "array",
       "uniqueItems": true,
       "minItems": 1,
-      "description": "List of effects to apply. Must have at least one.",
+      "description": "List of effects (actions) to apply. Must have at least one.",
       "required": ["mode", "type"],
       "items": {
         "type": "object",
