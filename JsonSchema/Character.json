@@ -61,7 +61,8 @@
       "type": "number",
       "maximum": 20,
       "minimum": 0,
-      "description": "Required. Starting value for the charm stat. This represents how delightful the character appears to other characters in dialogue. Can be fractional."
+      "default": 10,
+      "description": "Starting value for the charm stat. This represents how delightful the character appears to other characters in dialogue. Can be fractional."
     },
     "abilityIds": {
       "type": "array",
