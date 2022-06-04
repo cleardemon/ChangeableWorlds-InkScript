@@ -58,11 +58,11 @@
       "description": "Required. Starting value for the avoidance stat. This represents the amount of defensive power the character has."
     },
     "baseCharm": {
-      "type": "number",
-      "maximum": 20,
-      "minimum": 0,
-      "default": 10,
-      "description": "Starting value for the charm stat. This represents how delightful the character appears to other characters in dialogue. Can be fractional."
+      "type": "integer",
+      "maximum": 10,
+      "minimum": -10,
+      "default": 0,
+      "description": "Starting value for the charm stat. This represents how delightful the character appears to other characters in dialogue. -10 = disliked, 10 = liked"
     },
     "abilityIds": {
       "type": "array",
