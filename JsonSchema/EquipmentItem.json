@@ -4,30 +4,40 @@
   "title": "Equipment Item",
   "description": "An object that can be equipped by a character",
   "type": "object",
+  "required": ["id", "name", "itemSlot"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Required. Unique identifier for the equipment item."
+    },
+    "name": {
+      "type": "array",
+      "description": "Required. Displayable name.",
+      "items": {
+        "type": "object",
+        "$ref": "UtilLocalisedName.json"
+      }
     },
     "itemSlot": {
       "type": "string",
-      "enum": ["hand", "belt", "clothing", "neck"]
+      "enum": ["Hand", "Belt", "Clothing", "Neck"],
+      "description": "Required. Defines which location on the character that the item can be equipped."
     },
-    "enabledAbilities": {
+    "enabledAbilityIds": {
       "type": "array",
       "uniqueItems": true,
+      "description": "List of combat ability IDs that are granted to the character when this item is equipped.",
       "items": {
-        "type": "object",
-        "$ref": "CombatAbility.json"
+        "type": "string"
       }
     },
-    "enabledStatusEffects": {
+    "enabledStatusEffectIds": {
       "type": "array",
       "uniqueItems": true,
+      "description": "List of status effect IDs that are applied to the character while this item is equipped.",
       "items": {
-        "type": "object",
-        "$ref": "StatusEffect.json"
+        "type": "string"
       }
     }
-  },
-  "required": ["id", "itemSlot"]
+  }
 }

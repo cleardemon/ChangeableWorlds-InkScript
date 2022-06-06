@@ -4,55 +4,100 @@
   "title": "Character",
   "description": "A character that is present in the game",
   "type": "object",
-  "required": ["id", "name", "race", "baseFortitude", "baseHealth", "baseAvoidance", "baseCharm", "baseStrength"],
+  "required": ["id", "name", "race", "baseFortitude", "baseAvoidance", "baseCharm", "baseStrength"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Required. Unique identifier for this character."
     },
     "name": {
-      "type": "string"
+      "type": "object",
+      "required": ["forename"],
+      "description": "Required. The name of the character. ",
+      "properties": {
+        "forename": {
+          "type": "string",
+          "description": "Required. First name of the character."
+        },
+        "surname": {
+          "type": "string",
+          "description": "Last name(s) of the character."
+        },
+        "title": {
+          "type": "array",
+          "description": "A title, prefixed to the forename.",
+          "items": {
+            "type": "object",
+            "$ref": "UtilLocalisedName.json"
+          }
+        }
+      }
     },
     "race": {
       "type": "string",
-      "enum": ["Yolen", "Shaler", "Kaidis", "Janzat", "Jan", "Motah"]
+      "enum": ["Yolen", "Shaler", "Kaidis", "Janzat", "Jan", "Motah"],
+      "description": "Required. The race that this character was born into."
     },
     "baseHealth": {
-      "type": "integer"
+      "type": "integer",
+      "description": "Starting value for the character's health statistic. If not specified, this value will default to the baseFortitude stat."
     },
     "baseFortitude": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1,
+      "description": "Required. Starting value for the fortitude stat. This describes the maximum amount of health points the character has."
     },
     "baseStrength": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1,
+      "description": "Required. Starting value for the strength stat. This represents the amount of attack power the character has."
     },
     "baseAvoidance": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 1,
+      "description": "Required. Starting value for the avoidance stat. This represents the amount of defensive power the character has."
     },
     "baseCharm": {
-      "type": "integer"
+      "type": "integer",
+      "maximum": 10,
+      "minimum": -10,
+      "default": 0,
+      "description": "Starting value for the charm stat. This represents how delightful the character appears to other characters in dialogue. -10 = disliked, 10 = liked"
     },
-    "abilities": {
+    "abilityIds": {
       "type": "array",
+      "description": "List of CombatAbility IDs that the character knows.",
       "uniqueItems": true,
       "items": {
-        "type": "object",
-        "$ref": "CombatAbility.json"
+        "type": "string"
       }
     },
-    "items": {
+    "equippedIds": {
       "type": "array",
+      "description": "List of EquipmentItem IDs that the character has equipped. Items listed here will use the slot that the equipment item defines.",
       "uniqueItems": true,
       "items": {
-        "type": "object",
-        "$ref": "EquipmentItem.json"
+        "type": "string"
       }
     },
-    "factions": {
+    "factionIds": {
       "type": "array",
+      "description": "List of Faction IDs that the character is a member.",
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "$ref": "Faction.json"
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The ID of the Faction."
+          },
+          "score": {
+            "type": "string",
+            "enum": ["Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honoured", "Revered"],
+            "description": "Starting score of the faction for the character. If not specified, defaults to Neutral."
+          }
+        }
       }
     }
   }

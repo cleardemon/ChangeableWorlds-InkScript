@@ -4,56 +4,62 @@
   "title": "Status Effect",
   "description": "A status effect that is applied to a character or an equipment item",
   "type": "object",
+  "required": ["id", "actions"],
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "description": "Unique identifier for the status effect. Required."
     },
     "name": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string",
-      "enum": ["temporary", "equipped"]
-    },
-    "equipmentId": {
-      "type": "string"
+      "type": "array",
+      "description": "Displayable name. If this item is not set, the effect is never displayed to the player.",
+      "items": {
+        "type": "object",
+        "$ref": "UtilLocalisedName.json"
+      }
     },
     "persist": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "If true, this status effect persists when the character is outside of a combat scenario. Defaults to false."
     },
-    "effects": {
+    "actions": {
       "type": "array",
       "uniqueItems": true,
       "minItems": 1,
+      "description": "List of effects (actions) to apply. Must have at least one.",
+      "required": ["mode", "type"],
       "items": {
         "type": "object",
         "properties": {
           "mode": {
             "type": "string",
-            "enum": ["OnActivate", "OnRemoval"]
+            "enum": ["OnActivate", "OnRemoval"],
+            "description": "Required. Defines when this effect is applied, based the entire status effect. OnActivate means it is applied when the status effect is first applied to the character. OnRemoval means when the status effect is to be removed from the character."
           },
           "type": {
             "type": "string",
-            "enum": ["stat", "potency", "flag"]
+            "enum": ["Stat", "Potency", "Flag"],
+            "description": "Required. Determines what effect happens. Stat means it changes a character statistic. Potency means it changes a character's potency stat. Flag means it exists on the character, allowing for other logic to test if the effect is active on the character (it may not have any specific effect)."
           },
           "amount": {
             "type": "integer",
+            "description": "A value describing Stat or Potency change values. If zero, does nothing.",
             "minimum": -20,
             "maximum": 20
           },
           "statType": {
             "type": "string",
-            "enum": ["health", "fortitude", "strength", "avoidance", "charm"]
+            "enum": ["Health", "Fortitude", "Strength", "Avoidance", "Charm"],
+            "description": "Enum defining what Stat or Potency on the character to change. Must be specified if type is Stat or Potency."
           },
           "turnCount": {
             "type": "integer",
             "minimum": 0,
-            "maximum": 20
+            "maximum": 20,
+            "description": "Defines how many player turns it takes for this effect to be removed. If zero, it persists until the end of the combat scenario (or forever if the entire effect persists outside of combat)."
           }
-        },
-        "required": ["mode", "type"]
+        }
       }
     }
-  },
-  "required": ["id", "name", "type"]
+  }
 }

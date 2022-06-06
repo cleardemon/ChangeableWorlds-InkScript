@@ -1,8 +1,9 @@
 ﻿{
-  "id": "CharacterSolus",
-  "name": "Solus",
+  "id": "Solus",
+  "name": {
+    "forename": "Solus"
+  },
   "race": "Shaler",
-  "baseHealth": 10,
   "baseFortitude": 10,
   "baseStrength": 5,
   "baseAvoidance": 3,
