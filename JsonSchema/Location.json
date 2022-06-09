@@ -15,7 +15,7 @@
       "description": "Required. Displayable name.",
       "items": {
         "type": "object",
-        "$ref": "UtilLocalisedName.json"
+        "$ref": "UtilLocalisedString.json"
       }
     },
     "type": {

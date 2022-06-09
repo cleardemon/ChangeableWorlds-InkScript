@@ -15,7 +15,7 @@
       "description": "Display name for faction. If not specified, it is not displayed to the player.",
       "items": {
         "type": "object",
-        "$ref": "UtilLocalisedName.json"
+        "$ref": "UtilLocalisedString.json"
       }
     },
     "startingScore": {

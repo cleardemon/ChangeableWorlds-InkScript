@@ -15,7 +15,7 @@
       "description": "Displayable name. If this item is not set, the effect is never displayed to the player.",
       "items": {
         "type": "object",
-        "$ref": "UtilLocalisedName.json"
+        "$ref": "UtilLocalisedString.json"
       }
     },
     "persist": {

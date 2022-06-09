@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://changeableworlds.com/json/inventory-item.json",
+  "title": "Inventory Item",
+  "description": "An object that can be pocketed by a character",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Required. Unique identifier for the inventory item."
+    },
+    "name": {
+      "type": "array",
+      "description": "Required. Displayable name.",
+      "items": {
+        "type": "object",
+        "$ref": "UtilLocalisedString.json"
+      }
+    },
+		"description": {
+			"type": "array",
+			"description": "Displayable description about the item.",
+			"items": {
+				"type": "object",
+				"$ref": "UtilLocalisedString.json"
+			}
+		},
+		"size": {
+			"type": "string",
+			"description": "Determines how many pocket slots the item can occupy on the character",
+			"enum": ["Small", "Large"]
+		}
+	}
+}

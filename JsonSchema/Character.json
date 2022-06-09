@@ -28,7 +28,7 @@
           "description": "A title, prefixed to the forename.",
           "items": {
             "type": "object",
-            "$ref": "UtilLocalisedName.json"
+            "$ref": "UtilLocalisedString.json"
           }
         }
       }
