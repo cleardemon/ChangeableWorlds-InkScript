@@ -99,6 +99,27 @@
           }
         }
       }
+    },
+    "pocket": {
+      "type": "object",
+      "description": "Inventory space (a pocket) on the character, with any pre-populated inventory items.",
+      "properties": {
+        "size": {
+          "type": "integer",
+          "description": "The number of small items that can fit in this character's pocket.",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 2
+        },
+        "itemIds": {
+          "type": "array",
+          "description": "List of InventoryItem IDs that the character has in their pocket.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }
