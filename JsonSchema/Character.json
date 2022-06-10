@@ -120,6 +120,14 @@
           }
         }
       }
+    },
+    "knowledgeKeys": {
+      "type": "array",
+      "description": "List of knowledge keys that a character is aware. Note that these are typically set in the narrative script, but predefining them in certain circumstances may be useful.",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
     }
   }
 }
