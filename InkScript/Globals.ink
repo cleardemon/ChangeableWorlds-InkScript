@@ -22,7 +22,6 @@ INCLUDE Global/Landmarks.ink
 INCLUDE Global/Knowledge.ink
 INCLUDE Global/Inventory.ink
 INCLUDE Global/Factions.ink
-INCLUDE Global/Doors.ink
 INCLUDE Global/Time.ink
 INCLUDE Global/Player.ink
 INCLUDE Global/Weather.ink
@@ -32,7 +31,6 @@ INCLUDE Global/World.ink
 === function _GlobalInit()
 	// call initialisers
 	~ FactionInit()
-	~ DoorInit()
 	~ KnowledgeInit()
 	~ InventoryInit()
 	~ LandmarkInit()

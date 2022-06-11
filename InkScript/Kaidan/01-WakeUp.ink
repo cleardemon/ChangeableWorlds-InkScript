@@ -479,7 +479,7 @@ about the sudden line of questioning, but has his own matters to attend to.
     + [Exit gate]
         Without hesitating any longer, Kaidan heads into the city to find his way towards his awaiting lectures.
         // set the gate to be locked
-        ~ DoorSetLocked(DoorId_IkisFrontDoor)
+        ~ DoorLock("IkisFrontDoor")
         ~ SetCityJumpTarget("A", PartKaidan, "kaidan_chapter_02")
         !LOAD {PartCities} city_thoridon_third.home_ikis
         -> DONE

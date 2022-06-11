@@ -75,3 +75,17 @@ EXTERNAL DEBUG (msg) // the space here is to fool Cake to not comment out this l
 
 // updates the engine to move the player to the specific location ID (as defined in the location database)
 EXTERNAL LocationSetPlayer(locationId)
+
+//
+// Doors
+// Door IDs are completely arbitrary and case-sensitive.
+//
+
+// test if the door is locked or not
+EXTERNAL DoorIsLocked(doorId)
+// set the door to be locked. if sealed, won't change
+EXTERNAL DoorLock(doorId)
+// set the door to be permanently sealed. it can never be unlocked.
+EXTERNAL DoorSeal(doorId)
+// attempt to unlock door. if sealed, it will fail. returns true if unlocked, false otherwise.
+EXTERNAL DoorTryUnlock(doorId)
