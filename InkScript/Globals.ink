@@ -21,7 +21,6 @@ INCLUDE Global/Externals.ink
 INCLUDE Global/Landmarks.ink
 INCLUDE Global/Knowledge.ink
 INCLUDE Global/Inventory.ink
-INCLUDE Global/Factions.ink
 INCLUDE Global/Time.ink
 INCLUDE Global/Player.ink
 INCLUDE Global/Weather.ink
@@ -30,7 +29,6 @@ INCLUDE Global/World.ink
 // this function is executed whenever Ink is loaded in the game engine. this includes !LOAD commands.
 === function _GlobalInit()
 	// call initialisers
-	~ FactionInit()
 	~ KnowledgeInit()
 	~ InventoryInit()
 	~ LandmarkInit()

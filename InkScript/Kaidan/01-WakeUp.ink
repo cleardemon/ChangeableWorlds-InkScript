@@ -91,7 +91,7 @@ about the sudden line of questioning, but has his own matters to attend to.
             Voice: We don't have time to argue!
 
             // passive-aggressiveness against father
-            ~ FactionAddScore(Faction_Kaidan_Ikis, -10)
+            ~ FactionAddScorePlayer("KaidanIkis", -10, false)
             ~ passive = true
             -> inspect_items
 
@@ -106,7 +106,7 @@ about the sudden line of questioning, but has his own matters to attend to.
             Voice: Kaidan! I don't have time for these games. And nor do you.
 
             // passive-aggressiveness against father
-            ~ FactionAddScore(Faction_Kaidan_Ikis, -10)
+            ~ FactionAddScorePlayer("KaidanIkis", -10, false)
             ~ passive = true
             -> inspect_items
 
@@ -243,7 +243,7 @@ about the sudden line of questioning, but has his own matters to attend to.
         Ikis: I will wait outside. Come quickly.
 
         // does not reflect well on his father
-        ~ FactionAddScore(Faction_Kaidan_Ikis, -10)
+            ~ FactionAddScorePlayer("KaidanIkis", -10, false)
 
         -> ikis_clothes_before_leaving
 
@@ -272,7 +272,7 @@ about the sudden line of questioning, but has his own matters to attend to.
         Ikis: [shouting] Don't be ridiculous!
 
         // disapproving
-        ~ FactionAddScore(Faction_Kaidan_Ikis, -10)
+        ~ FactionAddScorePlayer("KaidanIkis", -10, false)
 
         Kaidan calms down.
 
@@ -461,9 +461,9 @@ about the sudden line of questioning, but has his own matters to attend to.
 
     { 
         - good_terms == true:
-            ~ FactionAddScore(Faction_Kaidan_Ikis, 5)
+            ~ FactionAddScorePlayer("KaidanIkis", 5, false)
         - else:
-            ~ FactionAddScore(Faction_Kaidan_Ikis, -10)
+            ~ FactionAddScorePlayer("KaidanIkis", -10, false)
     }
 
     Kaidan's father opens the gate at the end of the garden, which leads onto wider pathway. He turns to look at Kaidan before hurrying away.

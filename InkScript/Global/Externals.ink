@@ -89,3 +89,27 @@ EXTERNAL DoorLock(doorId)
 EXTERNAL DoorSeal(doorId)
 // attempt to unlock door. if sealed, it will fail. returns true if unlocked, false otherwise.
 EXTERNAL DoorTryUnlock(doorId)
+
+//
+// Factions
+//
+
+CONST AlignmentHated = -3
+CONST AlignmentHostile = -2
+CONST AlignmentUnfriendly = -1
+CONST AlignmentNeutral = 0
+CONST AlignmentFriendly = 1
+CONST AlignmentHonoured = 2
+CONST AlignmentRevered = 3
+
+// adds a delta score (integer) to the specified faction on the specified character
+EXTERNAL FactionAddScoreCharacter(characterId, factionId, delta)
+// adds a delta score (integer) to the specified faction to the player character
+// if usePossession is false, always uses the player character faction, otherwise attempts to change the possessed
+// character first
+EXTERNAL FactionAddScorePlayer(factionId, delta, usePossession)
+// returns the score of the faction for the specified character (see const above)
+EXTERNAL FactionGetScoreCharacter(characterId, factionId)
+// this gets the _effective_ score of the faction. that means, if the possessed character has a faction, it
+// will use that value, otherwise, it will use the value from the player character.
+EXTERNAL FactionGetScorePlayer(factionId)
