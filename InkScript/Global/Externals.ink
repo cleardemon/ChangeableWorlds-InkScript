@@ -68,3 +68,10 @@ EXTERNAL LOG(msg)
 // write a debug message to the game log (does NOT appear in release builds)
 // messages will also NOT get compiled into the InkScript binaries in release builds.
 EXTERNAL DEBUG (msg) // the space here is to fool Cake to not comment out this line
+
+//
+// Location
+//
+
+// updates the engine to move the player to the specific location ID (as defined in the location database)
+EXTERNAL LocationSetPlayer(locationId)

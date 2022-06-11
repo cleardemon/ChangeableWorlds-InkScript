@@ -16,8 +16,7 @@ Dialogue should change if player has already played as a character previously.
 === void_start
 	~ PlayerCurrentWorld = CWorldTypeEthereum
 
-	>SCENE test_scene
-	!LOCATION SyntheticVoid
+	~ LocationSetPlayer("SyntheticVoid")
 
 	It begins with a blinding flash of white light. But, there is nothing to see. No thought, no discussion, just feelings. There are no eyes to look through, there are no hands to touch with.
 
