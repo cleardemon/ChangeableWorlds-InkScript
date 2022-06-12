@@ -403,7 +403,7 @@ Dialogue should change if player has already played as a character previously.
 	- (complete) Then, in an instant, the blinding light and piercing sounds disappear. {PlayerName} sees colours, shapes, and begins to feel embodied and positioned somewhere.
 
 	// become Kaidan
-	!LOAD Kaidan kaidan_chapter_01
+	~ ScriptLoad("@Kaidan", "kaidan_chapter_01")
 	-> DONE
 
 

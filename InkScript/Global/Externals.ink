@@ -150,3 +150,8 @@ EXTERNAL KnowledgePlayerPossessedAdd(knowledgeKey)
 // adds a knowledge key to a specific character. returns false if already known
 EXTERNAL KnowledgeCharacterAdd(characterId, knowledgeKey)
 
+//
+// Platform externals
+//
+
+EXTERNAL ScriptLoad(script, divert)
