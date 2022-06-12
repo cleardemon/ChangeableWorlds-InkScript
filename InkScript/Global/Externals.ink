@@ -129,3 +129,20 @@ EXTERNAL InventoryContains(characterId, inventoryId)
 EXTERNAL InventoryAddItem(characterId, inventoryId)
 // attempts to remove an item from a character inventory. returns true if it was removed.
 EXTERNAL InventoryRemoveItem(characterId, inventoryId)
+
+//
+// Knowledge
+// See Knowledge.ink for a list of knowledge keys.
+//
+
+// tests if knowledge is known by the player character OR the possessed character
+EXTERNAL KnowledgePlayerIsKnown(knowledgeKey)
+// tests is knowledge is known by specific character
+EXTERNAL KnowledgeCharacterIsKnown(knowledgeKey)
+// adds a knowledge key to the player character only. returns false if already known
+EXTERNAL KnowledgePlayerAdd(knowledgeKey)
+// adds a knowledge key to the possessed character of the player. returns false if no possessed character or already known
+EXTERNAL KnowledgePlayerPossessedAdd(knowledgeKey)
+// adds a knowledge key to a specific character. returns false if already known
+EXTERNAL KnowledgeCharacterAdd(characterId, knowledgeKey)
+

@@ -10,7 +10,7 @@
 
 	// if it is afternoon and before dusk, add a note to say that lots of people come and go
 
-	+ [Enter {KnowledgeIsKnown(KnowledgeGlobalThoridonBlueCask):The Blue Cask|inside}]
+	+ [Enter {KnowledgePlayerIsKnown(KnowledgeGlobalThoridonBlueCask):The Blue Cask|inside}]
 		// player only knows what this landmark is if they have entered inside
 		~ LandmarkSetVisited(LandmarkCityThoridonThird, "M")
 		-> blue_cask_inside

@@ -155,7 +155,7 @@ about the sudden line of questioning, but has his own matters to attend to.
                 *** [Pick a random seed]
                     Using both hands, Kaidan removes a {~bulbous|round|small|coloured} seed from one of the plants. It is {~soft|tough|brittle|shell-like} to the touch and feels {~wet|dry|sticky}.
 
-                    Holding the seed, Kaidan looks at it intently but is unsure what to do with it afterwards, placing it down onto the glass sheet. {not KnowledgeIsKnown(KnowledgeKaidanFoundResearchPaper):There must be a reason for collecting all of these seeds.}
+                    Holding the seed, Kaidan looks at it intently but is unsure what to do with it afterwards, placing it down onto the glass sheet. {not KnowledgePlayerIsKnown(KnowledgeKaidanFoundResearchPaper):There must be a reason for collecting all of these seeds.}
 
                     -> corner_table
 
@@ -191,7 +191,7 @@ about the sudden line of questioning, but has his own matters to attend to.
 
                     There are hundreds of pages and it would take most of the day to read what is present, let alone, trying to understand its purpose. It is clear that it is work Kaidan has been producing for some time.
 
-                    ~ KnowledgeSet(KnowledgeKaidanFoundResearchPaper)
+                    ~ KnowledgePlayerPossessedAdd(KnowledgeKaidanFoundResearchPaper)
                     -> sit_table
 
                 +++ [Stand up]

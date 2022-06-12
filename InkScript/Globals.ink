@@ -28,6 +28,5 @@ INCLUDE Global/World.ink
 // this function is executed whenever Ink is loaded in the game engine. this includes !LOAD commands.
 === function _GlobalInit()
 	// call initialisers
-	~ KnowledgeInit()
 	~ LandmarkInit()
 	
