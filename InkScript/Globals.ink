@@ -20,7 +20,6 @@ INCLUDE Global/Util.ink
 INCLUDE Global/Externals.ink
 INCLUDE Global/Landmarks.ink
 INCLUDE Global/Knowledge.ink
-INCLUDE Global/Inventory.ink
 INCLUDE Global/Time.ink
 INCLUDE Global/Player.ink
 INCLUDE Global/Weather.ink
@@ -30,6 +29,5 @@ INCLUDE Global/World.ink
 === function _GlobalInit()
 	// call initialisers
 	~ KnowledgeInit()
-	~ InventoryInit()
 	~ LandmarkInit()
 	

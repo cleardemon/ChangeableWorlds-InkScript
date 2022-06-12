@@ -4,6 +4,10 @@
 // All functions declared in this file are executed in the engine.
 //
 
+// defines a globally recognised character ID that refers directly to the player.
+// this may mean the actual player character (in Yolen), or their possessed character, depending on context
+CONST PlayerCharacter = "PC"
+
 // Arrays
 
 // allocates a new array. returns an array key, use it with other Array functions. 
@@ -113,3 +117,15 @@ EXTERNAL FactionGetScoreCharacter(characterId, factionId)
 // this gets the _effective_ score of the faction. that means, if the possessed character has a faction, it
 // will use that value, otherwise, it will use the value from the player character.
 EXTERNAL FactionGetScorePlayer(factionId)
+
+//
+// Inventory
+// Use characterId of PlayerCharacter to test against the player's possessed character
+//
+
+// returns true if the character inventory contains the inventory item
+EXTERNAL InventoryContains(characterId, inventoryId)
+// attempts to add the item to the character inventory. returns false if not enough space.
+EXTERNAL InventoryAddItem(characterId, inventoryId)
+// attempts to remove an item from a character inventory. returns true if it was removed.
+EXTERNAL InventoryRemoveItem(characterId, inventoryId)
