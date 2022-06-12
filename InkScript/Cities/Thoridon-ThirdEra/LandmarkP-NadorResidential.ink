@@ -1,6 +1,5 @@
 = residential_nador // P
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "P")
-	<- jump_load("P")
+	~ LocationVisited(Location_ThoridonNador)
 
 	{_UtilGetCharacterName()} walks into {residential_nador < 2:an area of the city that is densely populated|the Nador residential ward}.
 
@@ -14,10 +13,10 @@
 
 	As {_UtilGetCharacterName()} moves through, various individuals push past without acknowledging anything else than themselves.
 
-	+ [{ThoridonThirdEraGoToLandmark("E", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesEast, MapDirectionNorth)}]
 		-> gatehouse_east
-	+ [{ThoridonThirdEraGoToLandmark("J", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonIkisHome, MapDirectionSouth)}]
 		-> home_ikis
-	+ [{ThoridonThirdEraGoToLandmark("M", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonBlueCask, MapDirectionWest)}]
 		-> blue_cask_pub
 

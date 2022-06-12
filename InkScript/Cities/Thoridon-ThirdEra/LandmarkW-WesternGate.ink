@@ -1,15 +1,14 @@
 = gatehouse_west // W
 	TODO describe western gatehouse
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "W")
-	<- jump_load("W")
+	~ LocationVisited(Location_ThoridonGatesWest)
 
 	Outside the western gatehouse.
 
 	+ [Go west]
 		Leave?!
 		-> gatehouse_west
-	+ [{ThoridonThirdEraGoToLandmark("I", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonMarketplaceOld, MapDirectionNorth)}]
 		-> union_market_old
-	+ [{ThoridonThirdEraGoToLandmark("L", MapDirectionNorthEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonOldGatehouseInn, MapDirectionNorthEast)}]
 		-> old_gatehouse_inn
 

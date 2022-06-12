@@ -16,9 +16,13 @@ All global variables will be synced with the game engine when they change.
 ** YOU DO NOT NEED TO INCLUDE IT IN ANY INK FILE DIRECTLY!
 */
 
+// auto-generated includes containing database keys
+INCLUDE Global/Data/Location.ink
+INCLUDE Global/Data/Character.ink
+
 INCLUDE Global/Util.ink
 INCLUDE Global/Externals.ink
-INCLUDE Global/Landmarks.ink
+INCLUDE Global/Constants.ink
 INCLUDE Global/Knowledge.ink
 INCLUDE Global/Time.ink
 INCLUDE Global/Player.ink
@@ -27,6 +31,6 @@ INCLUDE Global/World.ink
 
 // this function is executed whenever Ink is loaded in the game engine. this includes !LOAD commands.
 === function _GlobalInit()
-	// call initialisers
-	~ LandmarkInit()
-	
+	%NT
+	~ DEBUG("Global init")
+	%NT

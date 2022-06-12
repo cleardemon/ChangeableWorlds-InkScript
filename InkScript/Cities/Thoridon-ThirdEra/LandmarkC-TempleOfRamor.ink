@@ -1,12 +1,11 @@
 = temple_of_ramor // C
 	TODO describe the exterior of the Temple of Ramor
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "C")
-	<- jump_load("C")
+	~ LocationVisited(Location_ThoridonTempleOfRamor)
 
 	Outside the Temple of Ramor.
 
-	+ [{ThoridonThirdEraGoToLandmark("F", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonHallOfLegends, MapDirectionNorth)}]
 		-> hall_of_legends
-	+ [{ThoridonThirdEraGoToLandmark("A", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonQuadrangle, MapDirectionWest)}]
 		-> quadrangle
 

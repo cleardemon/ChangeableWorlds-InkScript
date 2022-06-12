@@ -1,14 +1,13 @@
 = residential_gomard // T
 	TODO describe low quality residential area (NE)
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "T")
-	<- jump_load("T")
+	~ LocationVisited(Location_ThoridonGomard)
 
 	Inside a low quality residential area.
 
-	+ [{ThoridonThirdEraGoToLandmark("U", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonEsdor, MapDirectionWest)}]
 		-> residential_esdor
-	+ [{ThoridonThirdEraGoToLandmark("S", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesSouth, MapDirectionEast)}]
 		-> gatehouse_south
-	+ [{ThoridonThirdEraGoToLandmark("H", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonMarketplace, MapDirectionNorth)}]
 		-> union_market_new
 

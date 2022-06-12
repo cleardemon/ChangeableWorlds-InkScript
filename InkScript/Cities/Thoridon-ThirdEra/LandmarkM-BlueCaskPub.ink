@@ -4,22 +4,20 @@
 	// benches inside, tables
 	// clientele subdued, locals
 
-	<- jump_load("M")
-
 	In amongst smaller buildings stands an eye-changing place. With hints of blue all around the outside of a single, large building, and some well-attended seating, stands a large blue barrel. Behind this barrel lies a wide door that leads inside. The path leading up to the door is well trodden, and an orange flickering glow emanating from the various windows grabs one's attention.
 
 	// if it is afternoon and before dusk, add a note to say that lots of people come and go
 
 	+ [Enter {KnowledgePlayerIsKnown(KnowledgeGlobalThoridonBlueCask):The Blue Cask|inside}]
 		// player only knows what this landmark is if they have entered inside
-		~ LandmarkSetVisited(LandmarkCityThoridonThird, "M")
+		~ LocationVisited(Location_ThoridonBlueCask)
 		-> blue_cask_inside
-	+ [{ThoridonThirdEraGoToLandmark("G", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGuardhouse, MapDirectionWest)}]
 		-> guardhouse
-	+ [{ThoridonThirdEraGoToLandmark("S", MapDirectionSouthWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesSouth, MapDirectionSouthWest)}]
 		-> gatehouse_south
-	+ [{ThoridonThirdEraGoToLandmark("Q", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonKasard, MapDirectionSouth)}]
 		-> residential_kasard
-	+ [{ThoridonThirdEraGoToLandmark("P", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonNador, MapDirectionEast)}]
 		-> residential_nador
 

@@ -1,12 +1,11 @@
 = residential_hexard // N
 	TODO describe high quality residential area (NE)
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "N")
-	<- jump_load("N")
+	~ LocationVisited(Location_ThoridonHexard)
 
 	Inside a high quality residential area.
 
-	+ [{ThoridonThirdEraGoToLandmark("K", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonEmperorHouse, MapDirectionWest)}]
 		-> home_emperor
-	+ [{ThoridonThirdEraGoToLandmark("O", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonDagard, MapDirectionSouth)}]
 		-> residential_dagard
 

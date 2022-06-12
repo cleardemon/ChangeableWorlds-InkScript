@@ -1,8 +1,7 @@
 = home_ikis // J
 	~ temp gate = 0
 
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "J")
-	<- jump_load("J")
+	~ LocationVisited(Location_ThoridonIkisHome)
 
 	Kaidan stands outside his home.
 
@@ -11,9 +10,9 @@
 	}
 
 	- (loop)
-		+ [{ThoridonThirdEraGoToLandmark("P", MapDirectionNorth)}]
+		+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonNador, MapDirectionNorth)}]
 			-> residential_nador
-		+ [{ThoridonThirdEraGoToLandmark("Q", MapDirectionWest)}]
+		+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonKasard, MapDirectionWest)}]
 			-> residential_kasard
 		+ { home_ikis > 1 && gate < 2 } [Open the gate]
 			{ DoorIsLocked("IkisFrontDoor"): 

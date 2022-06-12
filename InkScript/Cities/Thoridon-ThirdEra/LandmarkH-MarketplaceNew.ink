@@ -1,14 +1,13 @@
 = union_market_new // H
 	TODO describe the bustling marketplace, run by the People's Union
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "H")
-	<- jump_load("H")
+	~ LocationVisited(Location_ThoridonMarketplace)
 
 	In the People's Union marketplace.
 
-	+ [{ThoridonThirdEraGoToLandmark("G", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGuardhouse, MapDirectionEast)}]
 		-> guardhouse
-	+ [{ThoridonThirdEraGoToLandmark("T", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGomard, MapDirectionSouth)}]
 		-> residential_gomard
-	+ [{ThoridonThirdEraGoToLandmark("S", MapDirectionSouthEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesSouth, MapDirectionSouthEast)}]
 		-> gatehouse_south
 

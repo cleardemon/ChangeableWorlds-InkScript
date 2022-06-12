@@ -1,6 +1,5 @@
 = residential_kasard // Q
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "Q")
-	<- jump_load("Q")
+	~ LocationVisited(Location_ThoridonKasard)
 
 	{_UtilGetCharacterName()} wonders into {residential_kasard < 2:an area that appears to be residential|the Kasard residential ward}. 
 
@@ -12,11 +11,11 @@
 	A small arched sign sits between two tall trees at the entrance of the park. It bears clear writing that reads "Kasard Greens".
 	}
 	
-	+ [{ThoridonThirdEraGoToLandmark("M", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonBlueCask, MapDirectionNorth)}]
 		-> blue_cask_pub
-	+ [{ThoridonThirdEraGoToLandmark("J", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonIkisHome, MapDirectionEast)}]
 		-> home_ikis
-	+ [{ThoridonThirdEraGoToLandmark("S", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesSouth, MapDirectionWest)}]
 		-> gatehouse_south
 //	+ [Enter the park]
 //		-> kasard_park

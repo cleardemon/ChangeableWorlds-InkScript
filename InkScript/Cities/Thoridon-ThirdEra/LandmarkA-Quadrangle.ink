@@ -1,23 +1,22 @@
 = quadrangle // A
 
 	// mark as seen
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "A")
-	<- jump_load("A")
+	~ LocationVisited(Location_ThoridonQuadrangle)
 
 	TODO describe the Quadrangle
 	{ quadrangle == 1:
 	Central to everything in the city of Thoridon stands a large, rectangular courtyard known as the Quadrangle. 
 	}
 
-	+ [{ThoridonThirdEraGoToLandmark("D", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonSinthInstitute, MapDirectionNorth)}]
 		-> synth_institute
-	+ [{ThoridonThirdEraGoToLandmark("G", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGuardhouse, MapDirectionSouth)}]
 		-> guardhouse
-	+ [{ThoridonThirdEraGoToLandmark("C", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonTempleOfRamor, MapDirectionEast)}]
 		-> temple_of_ramor
-	+ [{ThoridonThirdEraGoToLandmark("B", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonSenateHouse, MapDirectionWest)}]
 		-> senate_house
-	+ [{ThoridonThirdEraGoToLandmark("L", MapDirectionNorthWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonOldGatehouseInn, MapDirectionNorthWest)}]
 		Cross the bridge to Inn A.
 		-> old_gatehouse_inn
 

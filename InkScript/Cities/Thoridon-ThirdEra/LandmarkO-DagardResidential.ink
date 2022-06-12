@@ -1,12 +1,11 @@
 = residential_dagard // O
 	TODO describe medium quality residential area (NE)
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "O")
-	<- jump_load("O")
-
+	~ LocationVisited(Location_ThoridonDagard)
+	
 	Inside a medium quality residential area.
 
-	+ [{ThoridonThirdEraGoToLandmark("N", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonHexard, MapDirectionNorth)}]
 		-> residential_hexard
-	+ [{ThoridonThirdEraGoToLandmark("E", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesEast, MapDirectionSouth)}]
 		-> gatehouse_east
 

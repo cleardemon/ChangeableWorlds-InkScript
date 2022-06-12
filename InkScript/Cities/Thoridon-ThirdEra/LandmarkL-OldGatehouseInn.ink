@@ -1,16 +1,15 @@
 = old_gatehouse_inn // L
 	// coaching inn? 
 	TODO describe Old Gatehouse Inn
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "L")
-	<- jump_load("L")
+	~ LocationVisited(Location_ThoridonOldGatehouseInn)
 
 	Outside the Old Gatehouse Inn.
 
-	+ [{ThoridonThirdEraGoToLandmark("I", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonMarketplaceOld, MapDirectionWest)}]
 		-> union_market_old
-	+ [{ThoridonThirdEraGoToLandmark("W", MapDirectionSouthWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGatesWest, MapDirectionSouthWest)}]
 		-> gatehouse_west
-	+ [{ThoridonThirdEraGoToLandmark("A", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonQuadrangle, MapDirectionSouth)}]
 		Cross the river to the Quadrangle.
 		-> quadrangle
 

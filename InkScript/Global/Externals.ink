@@ -77,8 +77,12 @@ EXTERNAL DEBUG (msg) // the space here is to fool Cake to not comment out this l
 // Location
 //
 
-// updates the engine to move the player to the specific location ID (as defined in the location database)
-EXTERNAL LocationSetPlayer(locationId)
+// records a location as being visited, and sets the player to be at that location in the engine
+EXTERNAL LocationVisited(locationId)
+// tests if a location has been previously recorded
+EXTERNAL LocationHasVisited(locationId)
+// retrieves the name of a location. this name is localised.
+EXTERNAL LocationGetName(locationId)
 
 //
 // Doors

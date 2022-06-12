@@ -56,31 +56,8 @@ J/Q/P/S/M/G/A/D
 		- MapDirectionEast: ~ dir = "east"
 		- MapDirectionWest: ~ dir = "west"
 	}
-	{ LandmarkIsVisited(LandmarkCityThoridonThird, landmark):
-		{ landmark:
-			- "A": ~ name = "Quadrangle"
-			- "B": ~ name = "Senate House"
-			- "C": ~ name = "Temple of Ramor"
-			- "D": ~ name = "Synth Institute"
-			- "E": ~ name = "Osshek Gatehouse"
-			- "F": ~ name = "Hall of Legends"
-			- "G": ~ name = "Guardhouse"
-			- "H": ~ name = "People's Union Marketplace"
-			- "I": ~ name = "People's Union Old Marketplace"
-			- "J": ~ name = "Home of Kaidan"
-			- "K": ~ name = "Emperor's Residence"
-			- "L": ~ name = "Old Gatehouse Inn"
-			- "M": ~ name = "The Blue Cask"
-			- "N": ~ name = "Hexard district"
-			- "O": ~ name = "Dagard district"
-			- "P": ~ name = "Nador district"
-			- "Q": ~ name = "Kasard district"
-			- "R": ~ name = "River"
-			- "S": ~ name = "Surhek Gatehouse"
-			- "T": ~ name = "Gomard district"
-			- "U": ~ name = "Esdor district"
-			- "W": ~ name = "Weshek Gatehouse"
-		}
+	{ LocationHasVisited(landmark):
+		~ name = LocationGetName(landmark)
 	}
 	{ name:
 		- "":
@@ -93,21 +70,3 @@ J/Q/P/S/M/G/A/D
 === city_thoridon_third
 // don't navigate directly to this knot - use one of the stitches (e.g. city_thoridon_third.quadrangle)
 
-// this thread is used to test if there is a jump target (that is, if the story needs to load a new script when entering a landmark).
-// since functions can't contain diverts, this is the workaround.
-// nothing happens if the landmark does not match
-// jump targets are defined using SetCityJumpTarget().
-= jump_load(landmark)
-	{ IsCityJumpTarget(landmark):
-		// copy these to locals
-		~ temp part = CityJumpTargetPart
-		~ temp divert = CityJumpTargetPartDivert 
-		// clear the global variables
-		~ ClearCityJumpTargets()
-		// issue load command for engine
-		!LOAD {part} {divert}
-		// nothing more to execute at all (control should have transferred to the part in the load command)
-		-> END
-	}
-	// not jump target, do nothing
-	-> DONE

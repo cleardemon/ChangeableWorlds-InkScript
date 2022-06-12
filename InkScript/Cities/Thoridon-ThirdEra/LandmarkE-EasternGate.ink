@@ -1,17 +1,16 @@
 = gatehouse_east // E
 	TODO describe eastern gatehouse
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "E")
-	<- jump_load("E")
-	
+	~ LocationVisited(Location_ThoridonGatesEast)
+
 	Outside the eastern gatehouse.
 
 	+ [Go east]
 		Leave?!
 		-> gatehouse_east
-	+ [{ThoridonThirdEraGoToLandmark("O", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonDagard, MapDirectionNorth)}]
 		-> residential_dagard
-	+ [{ThoridonThirdEraGoToLandmark("M", MapDirectionSouthWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonBlueCask, MapDirectionSouthWest)}]
 		-> blue_cask_pub
-	+ [{ThoridonThirdEraGoToLandmark("P", MapDirectionSouth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonNador, MapDirectionSouth)}]
 		-> residential_nador
 

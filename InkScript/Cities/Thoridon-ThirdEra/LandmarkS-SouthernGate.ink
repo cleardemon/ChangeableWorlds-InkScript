@@ -1,6 +1,5 @@
 = gatehouse_south // S
-	~ LandmarkSetVisited(LandmarkCityThoridonThird, "S")
-	<- jump_load("S")
+	~ LocationVisited(Location_ThoridonGatesSouth)
 
 	{ 
 		- gatehouse_south < 2:
@@ -11,15 +10,15 @@
 	{_UtilGetCharacterName()} stands at an intersection of many paths, with the gate to the south.
 	}
 
-	+ [{ThoridonThirdEraGoToLandmark("T", MapDirectionWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGomard, MapDirectionWest)}]
 		-> residential_gomard
-	+ [{ThoridonThirdEraGoToLandmark("H", MapDirectionNorthWest)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonMarketplace, MapDirectionNorthWest)}]
 		-> union_market_new
-	+ [{ThoridonThirdEraGoToLandmark("G", MapDirectionNorth)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonGuardhouse, MapDirectionNorth)}]
 		-> guardhouse
-	+ [{ThoridonThirdEraGoToLandmark("M", MapDirectionNorthEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonBlueCask, MapDirectionNorthEast)}]
 		-> blue_cask_pub
-	+ [{ThoridonThirdEraGoToLandmark("Q", MapDirectionEast)}]
+	+ [{ThoridonThirdEraGoToLandmark(Location_ThoridonKasard, MapDirectionEast)}]
 		-> residential_kasard
 	+ {not guards_south_denied} [Approach the guards]
 		-> guards_south(false)
