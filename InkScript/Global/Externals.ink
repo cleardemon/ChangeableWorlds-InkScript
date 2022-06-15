@@ -151,6 +151,72 @@ EXTERNAL KnowledgePlayerPossessedAdd(knowledgeKey)
 EXTERNAL KnowledgeCharacterAdd(characterId, knowledgeKey)
 
 //
+// Character
+//
+
+CONST CharacterStatTypeHealth = 0
+CONST CharacterStatTypeFortitude = 1
+CONST CharacterStatTypeStrength = 2
+CONST CharacterStatTypeAvoidance = 3
+CONST CharacterStatTypeCharm = 4
+
+CONST CharacterEquipmentSlotMainHand = 0
+CONST CharacterEquipmentSlotBelt = 1
+CONST CharacterEquipmentSlotClothing = 2
+CONST CharacterEquipmentSlotNeck = 3
+
+// gets a statistic value from a character. returns the value as int
+EXTERNAL CharacterGetStatValue(characterId, statType)
+// gets a raw statistic value from a character. this does not have status effects applied. returns value as int
+EXTERNAL CharacterGetStatValueBase(characterId, statType)
+// changes a raw statistic value on a character. status effects recomputed afterwards. return new base value as int.
+EXTERNAL CharacterChangeStatValue(characterId, statType, delta)
+// applies a status effect to a character
+EXTERNAL CharacterAddStatusEffect(characterId, effectId)
+// attempts to equip an item on a character. returns false if it could not be slotted.
+EXTERNAL CharacterEquipItem(characterId, equipmentId, slotType)
+// removes an equipped item on a character. returns the equipmentId if removed, empty string if not.
+EXTERNAL CharacterRemoveEquipItem(characterId, equipmentId)
+// retrieves the forename of the character, a string.
+EXTERNAL CharacterGetName(characterId)
+// retrieves the full name (forename + surname) of the character, optionally with any title (bool). returns string
+EXTERNAL CharacterGetFullName(characterId, withTitle)
+// attempts to add a combat ability to a character. returns true/false if added or not
+EXTERNAL CharacterAddAbility(characterId, abilityId)
+// attempts to remove a combat ability from a character. returns true/false if removed or not
+EXTERNAL CharacterRemoveAbility(characterId, abilityId)
+
+
+//
+// Player Character
+//
+
+// retrieves the PC name, as defined by the player. string.
+EXTERNAL PlayerGetName()
+// returns true/false if the PC is currently possessing a character
+EXTERNAL PlayerIsPossessed()
+// returns character ID or empty string for the possessed character by the PC
+EXTERNAL PlayerGetPossessedId()
+// sets the PC to be possessing an instance of the specified character ID. empty string removes possession.
+EXTERNAL PlayerSetPossessed(characterId)
+// returns true/false if the PC (not possessed character) knows the specified combat ability ID
+EXTERNAL PlayerHasAbility(abilityId)
+// attempts to add a combat ability to the PC (not possessed character). returns true/false if added or not
+EXTERNAL PlayerAddAbility(abilityId)
+// removes a combat ability from the PC (not possessed character)
+EXTERNAL PlayerRemoveAbility(abilityId)
+// gets a statistic value from the possessed character by the PC. returns the value as int, or -1 if not possessing
+EXTERNAL PlayerGetStatValue(statType)
+// gets a raw statistic value from the possessed character by the PC. this does not have status effects applied. returns value as int, or -1 if not possessing
+EXTERNAL PlayerGetStatusValueBase(statType)
+// changes a raw statistic value on the possessed character by the PC. status effects recomputed afterwards. return new base value as int, or -1 if not possessing.
+EXTERNAL PlayerChangeStatValue(statType, delta)
+// returns true/false if the possessed character has an equipmentId equipped.
+EXTERNAL PlayerIsEquipped(equipmentId)
+// applies a status effect to the possessed character. check possession is true first.
+EXTERNAL PlayerAddStatusEffect(effectId)
+
+//
 // Platform externals
 //
 
