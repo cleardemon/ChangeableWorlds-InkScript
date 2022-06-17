@@ -217,6 +217,72 @@ EXTERNAL PlayerIsEquipped(equipmentId)
 EXTERNAL PlayerAddStatusEffect(effectId)
 
 //
+// Climate
+//
+
+// weather conditions
+CONST ClimateConditionClear = 0
+CONST ClimateConditionCloudHigh = 1
+CONST ClimateConditionCloudLow = 2
+CONST ClimateConditionMist = 3
+CONST ClimateConditionFog = 4
+CONST ClimateConditionRainLight = 5
+CONST ClimateConditionRainHeavy = 6
+CONST ClimateConditionShowers = 7
+CONST ClimateConditionSleet = 8
+CONST ClimateConditionThunderstorm = 9
+CONST ClimateConditionSnow = 10
+CONST ClimateConditionDust = 11
+CONST ClimateConditionAshFall = 12
+
+// randomises the climate by a number of ticks
+EXTERNAL ClimateRandomise(locationId, ticks)
+// returns the current temperature, in celsius, in the current player location
+EXTERNAL ClimateGetTemperature()
+// returns the current weather at the current player location (see climate conditions above)
+EXTERNAL ClimateGetCondition()
+
+//
+// Date and Time
+//
+
+// time spans
+CONST TimeSpanMidnight = 0
+CONST TimeSpanNight = 1
+CONST TimeSpanDawn = 2
+CONST TimeSpanMorningEarly = 3
+CONST TimeSpanMorning = 4
+CONST TimeSpanMorningLate = 5
+CONST TimeSpanNoon = 6
+CONST TimeSpanAfternoonEarly = 7
+CONST TimeSpanAfternoon = 8
+CONST TimeSpanAfternoonLate = 9
+CONST TimeSpanDusk = 10
+
+// returns true it is currently daylight
+EXTERNAL TimeIsDaylight()
+// returns true if the current time is between two time spans
+EXTERNAL TimeIsBetween(spanA, spanB)
+// returns a formatted date string, with optional weekday
+EXTERNAL TimeGetFormattedDate(bool includeWeekday)
+// returns the current weekday (as a name)
+EXTERNAL TimeGetWeekday()
+// returns the current time (see time spans above)
+EXTERNAL TimeGetTimeSpan()
+// moves time forward by one tick
+EXTERNAL TimeAdvance()
+// moves the clock forward to the specified time span
+EXTERNAL TimeAdvanceTo(timeSpan)
+// moves time forward by a number of ticks. must be at least one.
+EXTERNAL TimeAdvanceBy(ticks)
+// moves time forward by a number of days. must be at least one.
+EXTERNAL TimeAdvanceDays(days)
+// sets the date of the world at the specified location, to the specified days, month, and year
+EXTERNAL TimeSetDate(locationId, day, month, year)
+// sets the time to the specified number of ticks at the specified location
+EXTERNAL TimeSetTime(locationId, ticks)
+
+//
 // Platform externals
 //
 

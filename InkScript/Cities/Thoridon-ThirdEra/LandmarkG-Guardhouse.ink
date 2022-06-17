@@ -10,7 +10,7 @@
 	// make it busy during daylight hours, for people going through the Quadrangle
 
 	// if Kaidan is trying to get to the Institute, add a hint
-	{ ClockIsCurrentTimeBetweenPri(CTimeSpanMorningEarly, CTimeSpanNoon): 
+	{ TimeIsBetween(TimeSpanMorningEarly, TimeSpanNoon): 
 	There are a number of others, dressed in similar robes as Kaidan, making their way northwards.
 	}
 

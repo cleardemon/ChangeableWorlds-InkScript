@@ -24,9 +24,7 @@ INCLUDE Global/Util.ink
 INCLUDE Global/Externals.ink
 INCLUDE Global/Constants.ink
 INCLUDE Global/Knowledge.ink
-INCLUDE Global/Time.ink
 INCLUDE Global/Player.ink
-INCLUDE Global/Weather.ink
 INCLUDE Global/World.ink
 
 // this function is executed whenever Ink is loaded in the game engine. this includes !LOAD commands.
