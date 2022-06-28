@@ -1,0 +1,149 @@
+{
+	"id": "scenario-id",
+	"environment": {
+		"time": "Night",
+		"width": 10,
+		"height": 10,
+		"obstacles": [
+			{
+				"type": "Void",
+				"x": 3,
+				"y": 4
+			}
+		]
+	},
+	"phases": [
+		{
+			"npcs": {
+				"add": [
+					{
+						"npcId": "npc-id",
+						"characterId": "abc",
+						"x": 4,
+						"y": 5,
+						"health": 30,
+						"strength": 20,
+						"effects": [
+							"abc",
+							"def"
+						]
+					}
+				],
+				"remove": [
+					"npc-id"
+				]
+			},
+			"environment": {
+				"add": [
+					{
+						"type": "Tree",
+						"x": 8,
+						"y": 9
+					}
+				],
+				"remove": [
+					{
+						"x": 3,
+						"y": 4
+					}
+				]
+			},
+			"abilities": {
+				"add": [
+					{
+						"id": "npc-id or PC",
+						"abilityId": "abc"
+					}
+				],
+				"remove": [
+					{
+						"id": "npc-id or PC",
+						"abilityId": "abc"
+					}
+				]
+			},
+			"conditions": {
+				"win": [
+					{
+						"id": "winConditionId",
+						"effects": [
+							"effectId"
+						],
+						"position": [
+							{
+								"id": "npc-id or PC",
+								"x": 1,
+								"y": 2
+							}
+						],
+						"action": [
+							{
+								"abilityId": "id",
+								"targetId": "npc-id or PC",
+								"x": 3,
+								"y": 4
+							}
+						],
+						"stats": [
+							{
+								"id": "npc-id or PC",
+								"type": "Health",
+								"equality": "LessThan",
+								"value": 20
+							}
+						]
+					}
+				],
+				"lose": []
+			},
+			"resolutions": {
+				"win": {
+					"winConditionId": [],
+					"default": [
+						{
+							"type": "nextPhase"
+						},
+						{
+							"type": "exitCombat"
+						},
+						{
+							"type": "applyEffect",
+							"targetId": "npc-id or PC",
+							"effectId": "effectId"
+						}
+					]
+				},
+				"lose": {
+					"loseConditionId": [],
+					"default": []
+				},
+				"retreat": [
+					{
+						"type": "exitCombat"
+					}
+				]
+			}
+		}
+	],
+	"resolutions": {
+		"win": {
+			"default": [
+				{
+					"type": "exitCombat"
+				}
+			]
+		},
+		"lose": {
+			"default": [
+				{
+					"type": "exitCombat"
+				}
+			]
+		},
+		"retreat": [
+			{
+				"type": "exitCombat"
+			}
+		]
+	}
+}

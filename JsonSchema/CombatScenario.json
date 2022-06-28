@@ -1,0 +1,307 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://changeableworlds.com/json/combat-scenario.json",
+	"title": "Combat Scenario",
+	"description": "Parameters for engaging the player with other characters in combat.",
+	"type": "object",
+	"required": [
+		"id",
+		"environment",
+		"phases",
+		"resolutions"
+	],
+	"properties": {
+		"id": {
+			"type": "string"
+		},
+		"environment": {
+			"type": "object",
+			"required": [
+				"width",
+				"height"
+			],
+			"properties": {
+				"time": {
+					"type": "string",
+					"enum": [
+						"Midnight",
+						"Night",
+						"Dawn",
+						"Morning",
+						"MorningEarly",
+						"MorningLate",
+						"Noon",
+						"Afternoon",
+						"AfternoonEarly",
+						"AfternoonLate",
+						"Dusk"
+					]
+				},
+				"width": {
+					"type": "integer",
+					"minimum": 3,
+					"maximum": 10
+				},
+				"height": {
+					"type": "integer",
+					"minimum": 3,
+					"maximum": 10
+				},
+				"obstacles": {
+					"type": "array",
+					"uniqueItems": true,
+					"items": {
+						"type": "object",
+						"required": [
+							"type",
+							"x",
+							"y"
+						],
+						"properties": {
+							"type": {
+								"type": "string",
+								"enum": [
+									"Void",
+									"Rock",
+									"Tree",
+									"Shrub",
+									"River",
+									"Sea",
+									"Wall"
+								]
+							},
+							"x": {
+								"type": "integer",
+								"minimum": 0,
+								"maximum": 255
+							},
+							"y": {
+								"type": "integer",
+								"minimum": 0,
+								"maximum": 255
+							},
+							"direction": {
+								"type": "string",
+								"enum": [
+									"NorthSouth",
+									"EastWest",
+									"NorthWestSouthEast",
+									"NorthEastSouthWest"
+								]
+							}
+						}
+					}
+				}
+			}
+		},
+		"phases": {
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "object",
+				"required": [
+					"conditions",
+					"resolutions"
+				],
+				"properties": {
+					"npcs": {
+						"type": "object",
+						"properties": {
+							"add": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"npcId",
+										"characterId",
+										"x",
+										"y"
+									],
+									"properties": {
+										"npcId": {
+											"type": "string"
+										},
+										"characterId": {
+											"type": "string"
+										},
+										"x": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										},
+										"y": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										},
+										"health": {
+											"type": "integer"
+										},
+										"strength": {
+											"type": "integer"
+										},
+										"fortitude": {
+											"type": "integer"
+										},
+										"avoidance": {
+											"type": "integer"
+										},
+										"effects": {
+											"type": "array",
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										}
+									}
+								}
+							},
+							"remove": {
+								"type": "array",
+								"uniqueItems": true,
+								"items": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"environment": {
+						"type": "object",
+						"properties": {
+							"add": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"type",
+										"x",
+										"y"
+									],
+									"properties": {
+										"type": {
+											"type": "string",
+											"enum": [
+												"Void",
+												"Rock",
+												"Tree",
+												"Shrub",
+												"River",
+												"Sea",
+												"Wall"
+											]
+										},
+										"x": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										},
+										"y": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										}
+									}
+								}
+							},
+							"remove": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"x",
+										"y"
+									],
+									"properties": {
+										"x": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										},
+										"y": {
+											"type": "integer",
+											"minimum": 0,
+											"maximum": 255
+										}
+									}
+								}
+							}
+						}
+					},
+					"abilities": {
+						"type": "object",
+						"required": [],
+						"properties": {
+							"add": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"id",
+										"abilityId"
+									],
+									"properties": {
+										"id": {
+											"type": "string"
+										},
+										"abilityId": {
+											"type": "string"
+										}
+									}
+								}
+							},
+							"remove": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": [
+										"id",
+										"abilityId"
+									],
+									"properties": {
+										"id": {
+											"type": "string"
+										},
+										"abilityId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					},
+					"conditions": {
+						"type": "object",
+						"required": [
+							"win",
+							"lose"
+						],
+						"properties": {
+							"win": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"$ref": "UtilCombatCondition.json"
+								}
+							},
+							"lose": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"$ref": "UtilCombatCondition.json"
+								}
+							}
+						}
+					},
+					"resolutions": {
+						"type": "object",
+						"$ref": "UtilCombatResolution.json"
+					}
+				}
+			}
+		},
+		"resolutions": {
+			"type": "object",
+			"$ref": "UtilCombatResolution.json"
+		}
+	}
+}

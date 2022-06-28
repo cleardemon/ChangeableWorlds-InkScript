@@ -1,0 +1,115 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://changeableworlds.com/json/utilcombatcondition.json",
+	"title": "Combat scenario conditions",
+	"description": "Settings to determine conditions for a scenario",
+	"type": "object",
+	"required": [
+		"id"
+	],
+	"properties": {
+		"id": {
+			"type": "string"
+		},
+		"effects": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"position": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"id",
+					"x",
+					"y"
+				],
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"x": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
+					},
+					"y": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
+					}
+				}
+			}
+		},
+		"action": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"abilityId",
+					"targetId"
+				],
+				"properties": {
+					"abilityId": {
+						"type": "string"
+					},
+					"targetId": {
+						"type": "string"
+					},
+					"x": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
+					},
+					"y": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
+					}
+				}
+			}
+		},
+		"stats": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"id",
+					"type",
+					"equality",
+					"value"
+				],
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string",
+						"enum": [
+							"Health",
+							"Avoidance",
+							"Strength",
+							"Fortitude"
+						]
+					},
+					"equality": {
+						"type": "string",
+						"enum": [
+							"Equal",
+							"GreaterThan",
+							"GreaterThanOrEqual",
+							"LessThan",
+							"LessThanOrEqual"
+						]
+					},
+					"value": {
+						"type": "integer",
+						"minimum": 0
+					}
+				}
+			}
+		}
+	}
+}

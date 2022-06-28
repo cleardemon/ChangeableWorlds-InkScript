@@ -1,0 +1,69 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://changeableworlds.com/json/utilcombatresolution.json",
+	"title": "Combat scenario resolution",
+	"description": "Settings to determine conditions for a resolution",
+	"type": "object",
+	"required": [
+		"win",
+		"lose",
+		"retreat"
+	],
+	"properties": {
+		"win": {
+			"type": "object",
+			"required": [
+				"default"
+			],
+			"patternProperties": {
+				"^[A-Za-z0-9_]*$": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"$ref": "UtilCombatResolutionItem.json"
+					}
+				}
+			},
+			"properties": {
+				"default": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"$ref": "UtilCombatResolutionItem.json"
+					}
+				}
+			}
+		},
+		"lose": {
+			"type": "object",
+			"required": [
+				"default"
+			],
+			"patternProperties": {
+				"^[A-Za-z0-9_]*$": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"$ref": "UtilCombatResolutionItem.json"
+					}
+				}
+			},
+			"properties": {
+				"default": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"$ref": "UtilCombatResolutionItem.json"
+					}
+				}
+			}
+		},
+		"retreat": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"$ref": "UtilCombatResolutionItem.json"
+			}
+		}
+	}
+}
