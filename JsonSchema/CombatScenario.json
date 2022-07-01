@@ -16,83 +16,7 @@
 		},
 		"environment": {
 			"type": "object",
-			"required": [
-				"width",
-				"height"
-			],
-			"properties": {
-				"time": {
-					"type": "string",
-					"enum": [
-						"Midnight",
-						"Night",
-						"Dawn",
-						"Morning",
-						"MorningEarly",
-						"MorningLate",
-						"Noon",
-						"Afternoon",
-						"AfternoonEarly",
-						"AfternoonLate",
-						"Dusk"
-					]
-				},
-				"width": {
-					"type": "integer",
-					"minimum": 3,
-					"maximum": 10
-				},
-				"height": {
-					"type": "integer",
-					"minimum": 3,
-					"maximum": 10
-				},
-				"obstacles": {
-					"type": "array",
-					"uniqueItems": true,
-					"items": {
-						"type": "object",
-						"required": [
-							"type",
-							"x",
-							"y"
-						],
-						"properties": {
-							"type": {
-								"type": "string",
-								"enum": [
-									"Void",
-									"Rock",
-									"Tree",
-									"Shrub",
-									"River",
-									"Sea",
-									"Wall"
-								]
-							},
-							"x": {
-								"type": "integer",
-								"minimum": 0,
-								"maximum": 255
-							},
-							"y": {
-								"type": "integer",
-								"minimum": 0,
-								"maximum": 255
-							},
-							"direction": {
-								"type": "string",
-								"enum": [
-									"NorthSouth",
-									"EastWest",
-									"NorthWestSouthEast",
-									"NorthEastSouthWest"
-								]
-							}
-						}
-					}
-				}
-			}
+			"$ref": "UtilCombatEnvironment.json"
 		},
 		"phases": {
 			"type": "array",
@@ -302,6 +226,23 @@
 		"resolutions": {
 			"type": "object",
 			"$ref": "UtilCombatResolution.json"
+		},
+		"modifiers": {
+			"type": "object",
+			"properties": {
+				"normal": {
+					"type": "object",
+					"$ref": "UtilCombatModifier.json"
+				},
+				"easy": {
+					"type": "object",
+					"$ref": "UtilCombatModifier.json"
+				},
+				"hard": {
+					"type": "object",
+					"$ref": "UtilCombatModifier.json"
+				}
+			}
 		}
 	}
 }

@@ -145,5 +145,22 @@
 				"type": "exitCombat"
 			}
 		]
+	},
+	"modifiers": {
+		"normal": {
+			"multipliers": [
+				{
+					"targetId": "npc-id",
+					"change": 0.8
+				}
+			],
+			"phaseSequence": [ 1, 2, 3, 4 ]
+		},
+		"easy": {
+
+		},
+		"hard": {
+
+		}
 	}
 }
