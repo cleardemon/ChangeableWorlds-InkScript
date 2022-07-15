@@ -128,6 +128,27 @@
       "items": {
         "type": "string"
       }
+    },
+    "traits": {
+      "type": "array",
+      "description": "List of combat traits that are used during NPC computations in combat. Defines how the character works during combat.",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "Fighter",
+          "Warrior",
+          "PrefersRanged",
+          "PrefersMelee",
+          "Tough",
+          "Weak",
+          "Loyal",
+          "Patient",
+          "Playful",
+          "Pacifist",
+          "Indiscriminate"
+        ]
+      }
     }
   }
 }
