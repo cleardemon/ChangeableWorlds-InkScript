@@ -219,6 +219,16 @@
 					"resolutions": {
 						"type": "object",
 						"$ref": "UtilCombatResolution.json"
+					},
+					"playerX": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
+					},
+					"playerY": {
+						"type": "integer",
+						"minimum": 0,
+						"maximum": 255
 					}
 				}
 			}
