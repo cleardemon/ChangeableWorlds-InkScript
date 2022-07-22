@@ -38,11 +38,11 @@
       "maximum": 20,
       "description": "Defines how many combat turns must elapse before this ability can be used again. If zero, the ability can be used on every turn."
     },
-    "characterTurnLimit": {
+    "characterUsageLimit": {
       "type": "integer",
       "minimum": 0,
       "maximum": 50,
-      "description": "Defines how many turns overall (including non-combat turns) must elapse before this ability can be used again. If zero, the ability can be used on every turn."
+      "description": "Defines how many times the ability can be used. This persists across combat scenarios. If zero, there are no limits."
     },
     "requiredCriteria": {
       "type": "array",
